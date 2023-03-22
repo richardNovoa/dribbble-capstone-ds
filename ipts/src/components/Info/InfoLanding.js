@@ -1,8 +1,8 @@
-import Navbar from './Navbar';
+import Navbar from '../_design-system/Navbar';
 import Hero from './Hero';
 import About from './About';
 import News from './News';
-import Footer from './Footer';
+import Footer from '../_design-system/Footer';
 
 const InfoLanding = () => {
 	return (
