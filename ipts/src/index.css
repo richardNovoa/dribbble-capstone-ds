@@ -9,45 +9,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
 
-.heading-1 {
-	font-family: 'ELNATH';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 32px;
-	line-height: 32px;
-}
-.heading-2 {
-	font-family: 'Maven Pro';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 28px;
-	line-height: 32px;
-}
-.heading-3 {
-	font-family: 'ELNATH';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 24px;
-}
 .subtitle-1 {
-	font-family: 'Maven Pro';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
+	font-family: 'ELNATH';
+	font-size: 12px;
+	line-height: 16px;
 }
 .body-1 {
 	font-family: 'Maven Pro';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 16px;
-}
-.caption {
-	font-family: 'Maven Pro';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 12px;
 	line-height: 16px;
 }
