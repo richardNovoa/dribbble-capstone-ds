@@ -1,5 +1,5 @@
 import React from 'react';
-import Typography from '../_design-system/Typography';
+import Typography from '../_design-system/components/Typography';
 
 const Hero = (props) => {
 	return (

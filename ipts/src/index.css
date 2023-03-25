@@ -4,7 +4,9 @@
 
 @font-face {
 	font-family: ELNATH;
-	src: local('ELNATH'), url('./assets/fonts/ELNATH.ttf') format('truetype');
+	src: local('ELNATH'),
+		url('./components/_design-system/assets/fonts/ELNATH.ttf')
+			format('truetype');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');

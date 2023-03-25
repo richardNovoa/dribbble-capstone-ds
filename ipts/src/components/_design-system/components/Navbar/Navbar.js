@@ -8,7 +8,7 @@ const Navbar = (props) => {
 			'bg-capstonegray-1000 text-capstonegray-100 py-2 flex justify-center';
 	} else {
 		navClass =
-			' bg-capstonegray-900 text-capstonegray-100 py-2 flex justify-center';
+			'bg-capstonegray-900 text-capstonegray-100 py-2 flex justify-center';
 	}
 	return (
 		<nav className={navClass}>
