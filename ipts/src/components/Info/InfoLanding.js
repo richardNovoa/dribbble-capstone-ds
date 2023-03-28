@@ -1,15 +1,6 @@
-import Navbar from '../_design-system/components/Navbar/Navbar';
 import Hero from './Hero';
 import About from './About';
 import News from './News';
-import Footer from '../_design-system/components/Footer';
-import NavbarLink from '../_design-system/components/Navbar/NavbarLink';
-import Card from '../_design-system/components/Card/Card';
-import Typography from '../_design-system/components/Typography';
-import CardMedia from '../_design-system/components/Card/CardMedia';
-import CardContent from '../_design-system/components/Card/CardContent';
-import Info from '../_design-system/components/Info';
-import Button from '../_design-system/components/Button';
 
 const InfoLanding = () => {
 	return (
