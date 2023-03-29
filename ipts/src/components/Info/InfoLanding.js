@@ -1,6 +1,16 @@
-import Hero from './Hero';
-import About from './About';
-import News from './News';
+import Hero from '../Info/Hero';
+import About from '../Info/About';
+import News from '../Info/News';
+
+import Navbar from 'capstone-ds-rn/dist/components/Navbar/Navbar';
+import Footer from 'capstone-ds-rn/dist/components/Footer';
+import NavbarLink from 'capstone-ds-rn/dist/components/Navbar/NavbarLink';
+import Card from 'capstone-ds-rn/dist/components/Card/Card';
+import Typography from 'capstone-ds-rn/dist/components/Typography';
+import CardMedia from 'capstone-ds-rn/dist/components/Card/CardMedia';
+import CardContent from 'capstone-ds-rn/dist/components/Card/CardContent';
+import Button from 'capstone-ds-rn/dist/components/Button';
+import Info from 'capstone-ds-rn/dist/components/Info';
 
 const InfoLanding = () => {
 	return (

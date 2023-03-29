@@ -1,5 +1,5 @@
 import React from 'react';
-import Typography from '../_design-system/components/Typography';
+import Typography from 'capstone-ds-rn/dist/components/Typography';
 
 const Hero = (props) => {
 	return (

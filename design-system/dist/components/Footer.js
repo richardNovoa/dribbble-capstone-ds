@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 var _logoLight = _interopRequireDefault(require("../assets/logo-light.svg"));
-var _Button = _interopRequireDefault(require("../components/Button"));
+var _Typography = _interopRequireDefault(require("../components/Typography"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const Footer = props => {
   return /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement("div", {
@@ -18,89 +18,89 @@ const Footer = props => {
     className: "flex flex-col gap-3"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "text-capstoneteal-200"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "subtitle-1"
   }, "SITEMAP")), /*#__PURE__*/_react.default.createElement("div", {
     className: "text-capstonegray-300"
   }, /*#__PURE__*/_react.default.createElement("a", {
     href: "#"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "body"
   }, "IPTS Travel")), /*#__PURE__*/_react.default.createElement("a", {
     href: "#"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "body"
   }, "IPTS Rail")), /*#__PURE__*/_react.default.createElement("a", {
     href: "#"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "body"
   }, "IPTS Info")))), /*#__PURE__*/_react.default.createElement("div", {
     className: "flex flex-col gap-3"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "text-capstoneteal-200"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "subtitle-1"
   }, "tickets and fares")), /*#__PURE__*/_react.default.createElement("div", {
     className: "text-capstonegray-300"
   }, /*#__PURE__*/_react.default.createElement("a", {
     href: "#"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "body"
   }, "Terra")), /*#__PURE__*/_react.default.createElement("a", {
     href: "#"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "body"
   }, "Andromeda")), /*#__PURE__*/_react.default.createElement("a", {
     href: "#"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "body"
   }, "Orion")), /*#__PURE__*/_react.default.createElement("a", {
     href: "#"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "body"
   }, "Klingon")))), /*#__PURE__*/_react.default.createElement("div", {
     className: "flex flex-col gap-3"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "text-capstoneteal-200"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "subtitle-1"
   }, "in the news")), /*#__PURE__*/_react.default.createElement("div", {
     className: "text-capstonegray-300"
   }, /*#__PURE__*/_react.default.createElement("a", {
     href: "#"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "body"
   }, "IPTS Blog")), /*#__PURE__*/_react.default.createElement("a", {
     href: "#"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "body"
   }, "IPTS Corporate")), /*#__PURE__*/_react.default.createElement("a", {
     href: "#"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "body"
   }, "Newsletter")))), /*#__PURE__*/_react.default.createElement("div", {
     className: "flex flex-col gap-3"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "text-capstoneteal-200"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "subtitle-1"
   }, "services & policies")), /*#__PURE__*/_react.default.createElement("div", {
     className: "text-capstonegray-300"
   }, /*#__PURE__*/_react.default.createElement("a", {
     href: "#"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "body"
   }, "Service Updates")), /*#__PURE__*/_react.default.createElement("a", {
     href: "#"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "body"
   }, "Contact Us")), /*#__PURE__*/_react.default.createElement("a", {
     href: "#"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "body"
   }, "Privacy Policy")), /*#__PURE__*/_react.default.createElement("a", {
     href: "#"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "body"
   }, "Data Policy")))))), /*#__PURE__*/_react.default.createElement("div", {
     className: "flex py-4 bg-capstonegray-1000 justify-center",
@@ -113,7 +113,7 @@ const Footer = props => {
     alt: "logo"
   }), /*#__PURE__*/_react.default.createElement("div", {
     className: "pt-1"
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "body"
   }, "2023 Interplanetary Travel Syndicate. All rights reserved")))));
 };

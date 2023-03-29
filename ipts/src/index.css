@@ -5,7 +5,7 @@
 @font-face {
 	font-family: ELNATH;
 	src: local('ELNATH'),
-		url('./components/_design-system/assets/fonts/ELNATH.ttf')
+		url('../node_modules/capstone-ds-rn/dist/assets/fonts/ELNATH.ttf')
 			format('truetype');
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../assets/logo-light.svg';
-import Typography from '../components/Button';
+import Typography from '../components/Typography';
 
 const Footer = (props) => {
 	return (

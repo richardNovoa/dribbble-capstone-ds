@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './components/_design-system/assets/fonts/ELNATH.ttf';
+import '../node_modules/capstone-ds-rn/dist/assets/fonts/ELNATH.ttf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

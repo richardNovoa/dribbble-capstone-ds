@@ -1,10 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors');
 module.exports = {
-	content: [
-		'./src/**/*.{js,jsx,ts,tsx}',
-		'./node_modules/capstone-ds-rn/dist/components/**/*.js'
-	],
+	content: ['./src/**/*.{js,jsx,ts,tsx}'],
 	colors: {},
 	theme: {
 		extend: {

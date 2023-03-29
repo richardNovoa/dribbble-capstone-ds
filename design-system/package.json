@@ -1,7 +1,7 @@
 {
 	"name": "capstone-ds-rn",
 	"description": "The design system for the dribbble design system capstone",
-	"version": "1.0.1",
+	"version": "1.0.4",
 	"private": false,
 	"main": "dist/index.js",
 	"module": "dist/index.js",
@@ -43,7 +43,8 @@
 		"@babel/cli": "^7.21.0",
 		"@babel/core": "^7.21.0",
 		"@babel/preset-env": "^7.20.2",
-		"prettier": "^2.8.4"
+		"prettier": "^2.8.4",
+		"tailwindcss": "^3.3.0"
 	},
 	"babel": {
 		"presets": [
