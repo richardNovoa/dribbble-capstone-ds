@@ -14,7 +14,7 @@ const CardMedia = (props) => {
 			<img
 				src={props.image}
 				alt='astronaut'
-				className='object-cover h-60 w-60'
+				className='object-cover h-60 w-full'
 			/>
 		);
 	}
