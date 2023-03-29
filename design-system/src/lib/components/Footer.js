@@ -6,7 +6,7 @@ const Footer = (props) => {
 	return (
 		<footer>
 			<div
-				className='flex justify-center bg-capstonegray-800 py-10'
+				className='flex justify-center bg-capstonegray-800 pt-20 pb-10 border-t-8 border-black'
 				id='footer-top'>
 				<div className='container flex justify-between'>
 					<div className='flex flex-col gap-3'>
