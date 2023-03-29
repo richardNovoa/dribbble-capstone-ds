@@ -13,7 +13,7 @@ const Info = props => {
     }, /*#__PURE__*/_react.default.createElement("img", {
       src: props.image,
       alt: "demo",
-      className: "w-4/5"
+      className: "w-4/5 border-2 border-capstonered-300"
     }), /*#__PURE__*/_react.default.createElement("div", {
       className: "flex flex-col justify-between p-10 w-80"
     }, props.children));
@@ -26,7 +26,7 @@ const Info = props => {
     }, props.children), /*#__PURE__*/_react.default.createElement("img", {
       src: props.image,
       alt: "demo",
-      className: "w-4/5"
+      className: "w-4/5 border-2 border-capstonered-300"
     }));
   }
 };

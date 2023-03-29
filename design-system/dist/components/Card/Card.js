@@ -13,7 +13,7 @@ const Card = props => {
     }, props.children);
   } else {
     return /*#__PURE__*/_react.default.createElement("div", {
-      class: "rounded overflow-hidden bg-white shadow"
+      class: "rounded overflow-hidden w-64"
     }, props.children);
   }
 };

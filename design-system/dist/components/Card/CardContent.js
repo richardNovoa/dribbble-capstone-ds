@@ -13,7 +13,7 @@ const CardContent = props => {
     }, props.children);
   } else {
     return /*#__PURE__*/_react.default.createElement("div", {
-      className: "p-4 bg-white"
+      className: "p-4 bg-capstoneblue-1000 text-white"
     }, props.children);
   }
 };

@@ -10,7 +10,7 @@ var _Typography = _interopRequireDefault(require("../components/Typography"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const Footer = props => {
   return /*#__PURE__*/_react.default.createElement("footer", null, /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex justify-center bg-capstonegray-800 py-10",
+    className: "flex justify-center bg-capstonegray-800 pt-20 pb-10 border-t-8 border-black",
     id: "footer-top"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "container flex justify-between"

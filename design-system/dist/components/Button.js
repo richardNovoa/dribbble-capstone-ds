@@ -8,7 +8,7 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const Button = props => {
   return /*#__PURE__*/_react.default.createElement("button", {
-    className: "flex gap-1 px-4 pt-4 pb-3 bg-capstoneblue-500 relative text-white"
+    className: "flex gap-1 px-4 pt-4 pb-3 bg-capstoneblue-500 relative text-white border-2 border-capstoneblue-0"
   }, /*#__PURE__*/_react.default.createElement("label", {
     className: "subtitle-1 z-10"
   }, props.children), /*#__PURE__*/_react.default.createElement("div", {
