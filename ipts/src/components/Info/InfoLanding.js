@@ -1,4 +1,4 @@
-import Hero from '../Info/Hero';
+import Hero from '../common_components/Hero';
 import About from '../Info/About';
 import News from '../Info/News';
 
@@ -16,9 +16,9 @@ const InfoLanding = () => {
 	return (
 		<div>
 			<Navbar variant='primary'>
-				<NavbarLink href='#'>Travel</NavbarLink>
-				<NavbarLink href='#'>Rail</NavbarLink>
-				<NavbarLink href='#' hasIcon='true'>
+				<NavbarLink href='/travel'>Travel</NavbarLink>
+				<NavbarLink href='/rail'>Rail</NavbarLink>
+				<NavbarLink href='/' hasIcon='true'>
 					EN
 				</NavbarLink>
 			</Navbar>
@@ -29,7 +29,10 @@ const InfoLanding = () => {
 					EN
 				</NavbarLink>
 			</Navbar>
-			<Hero />
+			<Hero
+				src='https://images.unsplash.com/photo-1614314007212-0257d6e2f7d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80'
+				alt='hero image'
+			/>
 			<div className='p-10 flex gap-4 justify-center'>
 				<Card variant='sm'>
 					<CardMedia
