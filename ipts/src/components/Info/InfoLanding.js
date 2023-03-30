@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Hero from '../common_components/Hero';
 import Navbar from 'capstone-ds-rn/dist/components/Navbar/Navbar';
 import NavbarLink from 'capstone-ds-rn/dist/components/Navbar/NavbarLink';
@@ -18,6 +18,9 @@ import Planet4 from '../common_components/assets/Planet-04.png';
 import Planet5 from '../common_components/assets/Planet-05.png';
 
 const InfoLanding = () => {
+	useEffect(() => {
+		document.title = 'IPTS Info';
+	}, []);
 	return (
 		<div className='bg-capstonegray-900'>
 			<Navbar variant='primary'>
@@ -112,7 +115,7 @@ const InfoLanding = () => {
 						</div>
 					</div>
 				</section>
-				<section className='w-full flex justify-center' id='info'>
+				<section className='w-full flex justify-center py-10' id='info'>
 					<div className='container flex justify-between'>
 						<div className='px-10 py-6 w-2/5 flex flex-col justify-between'>
 							<div>
@@ -180,7 +183,7 @@ const InfoLanding = () => {
 						<Button>CONSCRIPT NOW</Button>
 					</Banner>
 				</section>
-				<section className='w-full flex justify-center' id='info'>
+				<section className='w-full flex justify-center py-10' id='info'>
 					<div className='container flex justify-between'>
 						<div className='w-full'>
 							<DisplayImage image='https://images.unsplash.com/photo-1578189735875-98f8f63e2603?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2334&q=80' />

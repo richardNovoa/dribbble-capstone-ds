@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Hero from '../common_components/Hero';
 import Navbar from 'capstone-ds-rn/dist/components/Navbar/Navbar';
 import NavbarLink from 'capstone-ds-rn/dist/components/Navbar/NavbarLink';
@@ -13,6 +13,9 @@ import Footer from 'capstone-ds-rn/dist/components/Footer';
 import Search from '../common_components/Search';
 
 const TravelLanding = () => {
+	useEffect(() => {
+		document.title = 'IPTS Travel';
+	}, []);
 	return (
 		<div className='bg-capstonegray-900'>
 			<Navbar variant='primary'>
@@ -21,11 +24,9 @@ const TravelLanding = () => {
 				<NavbarLink href='/'>Info</NavbarLink>
 			</Navbar>
 			<Navbar variant='secondary'>
-				<NavbarLink href='#'>Travel</NavbarLink>
-				<NavbarLink href='#'>Rail</NavbarLink>
-				<NavbarLink href='#' hasIcon='true'>
-					EN
-				</NavbarLink>
+				<NavbarLink href='#'>Plan your Journey</NavbarLink>
+				<NavbarLink href='#'>Promotions</NavbarLink>
+				<NavbarLink href='#'>Rewards</NavbarLink>
 			</Navbar>
 			<main className='pb-20 gap-10 flex flex-col'>
 				<Hero
@@ -108,7 +109,7 @@ const TravelLanding = () => {
 						</div>
 					</div>
 				</section>
-				<section className='w-full flex justify-center' id='info'>
+				<section className='w-full flex justify-center py-10' id='info'>
 					<div className='container flex justify-between'>
 						<div className='w-full'>
 							<DisplayImage image='https://images.unsplash.com/photo-1578374173713-32f6ae6f3971?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80' />

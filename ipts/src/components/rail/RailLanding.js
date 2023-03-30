@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Hero from '../common_components/Hero';
 import Navbar from 'capstone-ds-rn/dist/components/Navbar/Navbar';
 import NavbarLink from 'capstone-ds-rn/dist/components/Navbar/NavbarLink';
@@ -19,6 +19,9 @@ import Planet4 from '../common_components/assets/Planet-04.png';
 import Planet5 from '../common_components/assets/Planet-05.png';
 
 const RailLanding = () => {
+	useEffect(() => {
+		document.title = 'IPTS Rail';
+	}, []);
 	return (
 		<div className='bg-capstonegray-900'>
 			<Navbar variant='primary'>
@@ -106,7 +109,7 @@ const RailLanding = () => {
 						</div>
 					</div>
 				</section>
-				<section className='w-full flex justify-center' id='info'>
+				<section className='w-full flex justify-center py-10' id='info'>
 					<div className='container flex justify-between'>
 						<div className='px-10 py-6 w-2/5 flex flex-col justify-between'>
 							<div>
