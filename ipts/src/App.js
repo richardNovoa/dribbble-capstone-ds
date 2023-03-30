@@ -1,9 +1,9 @@
 import InfoLanding from './components/Info/InfoLanding';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import TravelLanding from './components/travel/TravelLanding';
 import RailLanding from './components/rail/RailLanding';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
 	{
 		path: '/',
 		element: <InfoLanding />
