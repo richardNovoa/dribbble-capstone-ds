@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dribbble-capstone/static/css/main.130c4307.css",
-    "main.js": "/dribbble-capstone/static/js/main.f1c76eb5.js",
+    "main.js": "/dribbble-capstone/static/js/main.e2d3ec3f.js",
     "static/js/787.f4a820d8.chunk.js": "/dribbble-capstone/static/js/787.f4a820d8.chunk.js",
     "static/media/ELNATH.ttf": "/dribbble-capstone/static/media/ELNATH.d9a3865b9205025bfa6c.ttf",
     "static/media/Planet-04.png": "/dribbble-capstone/static/media/Planet-04.d6f027ea92fc464d144e.png",
@@ -12,11 +12,11 @@
     "static/media/logo-light.svg": "/dribbble-capstone/static/media/logo-light.76c385804f9c2fc6ca04e983748d2ce6.svg",
     "index.html": "/dribbble-capstone/index.html",
     "main.130c4307.css.map": "/dribbble-capstone/static/css/main.130c4307.css.map",
-    "main.f1c76eb5.js.map": "/dribbble-capstone/static/js/main.f1c76eb5.js.map",
+    "main.e2d3ec3f.js.map": "/dribbble-capstone/static/js/main.e2d3ec3f.js.map",
     "787.f4a820d8.chunk.js.map": "/dribbble-capstone/static/js/787.f4a820d8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.130c4307.css",
-    "static/js/main.f1c76eb5.js"
+    "static/js/main.e2d3ec3f.js"
   ]
 }
