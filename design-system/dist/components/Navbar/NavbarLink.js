@@ -14,7 +14,7 @@ const NavbarLink = props => {
   }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "subtitle-1"
   }, props.children), props.hasIcon === 'true' && /*#__PURE__*/_react.default.createElement("i", {
-    class: "fa-solid fa-chevron-down fa-xs pb-1"
+    className: "fa-solid fa-chevron-down fa-xs pb-1"
   }));
 };
 var _default = NavbarLink;

@@ -6,7 +6,7 @@ const Hero = (props) => {
 			<img
 				src={props.src}
 				alt={props.alt}
-				class='w-full h-auto bg-cover'
+				className='w-full h-auto bg-cover'
 				style={{ height: 900 }}
 			/>
 			<div className=' absolute bottom-16 w-full text-white flex justify-center'>
