@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dribbble-capstone-ds/static/css/main.176212ce.css",
-    "main.js": "/dribbble-capstone-ds/static/js/main.64f06795.js",
+    "main.js": "/dribbble-capstone-ds/static/js/main.6ba496a5.js",
     "static/js/787.f4a820d8.chunk.js": "/dribbble-capstone-ds/static/js/787.f4a820d8.chunk.js",
     "static/media/ELNATH.ttf": "/dribbble-capstone-ds/static/media/ELNATH.d9a3865b9205025bfa6c.ttf",
     "static/media/Planet-04.png": "/dribbble-capstone-ds/static/media/Planet-04.d6f027ea92fc464d144e.png",
@@ -12,11 +12,11 @@
     "static/media/logo-light.svg": "/dribbble-capstone-ds/static/media/logo-light.76c385804f9c2fc6ca04e983748d2ce6.svg",
     "index.html": "/dribbble-capstone-ds/index.html",
     "main.176212ce.css.map": "/dribbble-capstone-ds/static/css/main.176212ce.css.map",
-    "main.64f06795.js.map": "/dribbble-capstone-ds/static/js/main.64f06795.js.map",
+    "main.6ba496a5.js.map": "/dribbble-capstone-ds/static/js/main.6ba496a5.js.map",
     "787.f4a820d8.chunk.js.map": "/dribbble-capstone-ds/static/js/787.f4a820d8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.176212ce.css",
-    "static/js/main.64f06795.js"
+    "static/js/main.6ba496a5.js"
   ]
 }
