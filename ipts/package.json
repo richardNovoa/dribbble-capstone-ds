@@ -1,7 +1,7 @@
 {
 	"name": "ipts",
 	"version": "0.1.0",
-	"homepage": "https://richardnovoa.github.io/dribbble-capstone",
+	"homepage": "https://richardnovoa.github.io/dribbble-capstone-ds",
 	"description": "Dribbble Design System capstone live website",
 	"private": true,
 	"dependencies": {
