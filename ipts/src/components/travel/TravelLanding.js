@@ -19,9 +19,9 @@ const TravelLanding = () => {
 	return (
 		<div className='bg-capstonegray-900'>
 			<Navbar variant='primary'>
-				<NavbarLink href='/travel'>Travel</NavbarLink>
-				<NavbarLink href='/rail'>Rail</NavbarLink>
-				<NavbarLink href='/'>Info</NavbarLink>
+				<NavbarLink href='#/travel'>Travel</NavbarLink>
+				<NavbarLink href='#/rail'>Rail</NavbarLink>
+				<NavbarLink href='#/'>Info</NavbarLink>
 			</Navbar>
 			<Navbar variant='secondary'>
 				<NavbarLink href='#'>Plan your Journey</NavbarLink>
