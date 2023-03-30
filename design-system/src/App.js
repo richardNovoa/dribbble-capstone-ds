@@ -6,7 +6,8 @@ import Typography from './lib/components/Typography';
 import CardMedia from './lib/components/Card/CardMedia';
 import CardContent from './lib/components/Card/CardContent';
 import Button from './lib/components/Button';
-import Info from './lib/components/Info';
+import DisplayImage from './lib/components/DisplayImage';
+import Banner from './lib/components/Banner';
 
 function App() {
 	return (
@@ -78,31 +79,15 @@ function App() {
 				</Card>
 			</div>
 			<p>Planets we visit</p>
-			<Info
+
+			<DisplayImage
 				variant='img-left'
-				image='https://images.unsplash.com/photo-1586999082731-574a06ec7e25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2369&q=80'>
-				<div>
-					<Typography variant='heading-3'>Title</Typography>
-					<Typography variant='body'>Description</Typography>
-				</div>
-				<div>
-					<Typography variant='heading-3'>Title</Typography>
-					<Typography variant='body'>Description</Typography>
-				</div>
-			</Info>
-			<Info
+				image='https://images.unsplash.com/photo-1586999082731-574a06ec7e25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2369&q=80'
+			/>
+			<DisplayImage
 				variant='img-right'
-				image='https://images.unsplash.com/photo-1586999082731-574a06ec7e25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2369&q=80'>
-				<div>
-					<Typography variant='heading-3'>Title</Typography>
-					<Typography variant='body'>Description</Typography>
-				</div>
-				<div>
-					<Typography variant='heading-3'>Title</Typography>
-					<Typography variant='body'>Description</Typography>
-					<Button>Hello World</Button>
-				</div>
-			</Info>
+				image='https://images.unsplash.com/photo-1586999082731-574a06ec7e25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2369&q=80'
+			/>
 
 			<div className='p-10 flex gap-4 justify-center'>
 				<Card>
@@ -135,6 +120,17 @@ function App() {
 				</Card>
 			</div>
 			<p>call to action</p>
+			<Banner>
+				<Typography variant='heading-3'>
+					Join the interplanetary travel syndicate
+				</Typography>
+				<Typography variant='body'>
+					For a limited time, we're offering an exclusive deal to our new
+					customers. <br />
+					Be warned, this offer won't last forever.
+				</Typography>
+				<Button>CONSCRIPT NOW</Button>
+			</Banner>
 
 			<Footer />
 		</div>

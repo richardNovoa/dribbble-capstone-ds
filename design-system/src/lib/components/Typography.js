@@ -15,8 +15,8 @@ const Typography = (props) => {
 		return textClass[type];
 	}
 
-	if (props.class) {
-		mergedClass = props.className + getClass(props.variant);
+	if (props.className) {
+		mergedClass = props.className + ' ' + getClass(props.variant);
 	} else {
 		mergedClass = getClass(props.variant);
 	}
