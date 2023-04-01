@@ -31,7 +31,7 @@ const Search = (props) => {
 					<input type='text' className='h-12 text-capstonegray-1000 pl-2' />
 				</div>
 				<div className='gap-2 flex flex-col w-2/5'>
-					<Typography variant='body'>Flying from</Typography>
+					<Typography variant='body'>Flying to</Typography>
 					<input type='text' className='h-12 text-capstonegray-1000 pl-2' />
 				</div>
 				<Button>Search Flights</Button>
