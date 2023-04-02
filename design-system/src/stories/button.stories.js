@@ -1,9 +1,15 @@
 import { Button } from '../lib/components/Button';
+
 export default {
 	title: 'Components/Button',
-	component: Button
+	component: Button,
+	args: {
+		children: 'Button'
+	}
 };
 
-export const Default = () => <Button>search the stars</Button>;
+export function Default(args) {
+	return <Button>{args.children}</Button>;
+}
 
-const Template = (args) => <Button {...args} />;
+Default.args = {};

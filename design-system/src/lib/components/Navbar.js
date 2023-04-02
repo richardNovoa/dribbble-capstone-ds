@@ -14,13 +14,13 @@ const Navbar = (props) => {
 					<NavbarLink>Ride</NavbarLink>
 				</div>
 			</NavbarPrimary>
-			<NavbarSecondary hasSecondary={props.hasSecondary} brand={props.brand}>
-				{props.children}
-			</NavbarSecondary>
+			{props.hasSecondary && (
+				<NavbarSecondary brand={props.brand}>{props.children}</NavbarSecondary>
+			)}
 		</nav>
 	);
 };
-Navbar.defaultProps = { brand: 'world', hasSecondary: 'false' };
+Navbar.defaultProps = { brand: 'world', hasSecondary: true };
 
 Navbar.propTypes = {
 	brand: PropTypes.string,
