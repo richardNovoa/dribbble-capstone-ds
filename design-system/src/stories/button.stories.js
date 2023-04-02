@@ -1,4 +1,4 @@
-import Button from '../lib/components/Button';
+import { Button } from '../lib/components/Button';
 export default {
 	title: 'Components/Button',
 	component: Button
