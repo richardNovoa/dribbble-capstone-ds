@@ -121,7 +121,7 @@ const FooterEnd = (props) => {
 			<div className='flex container justify-between text-white'>
 				<Logo brand={props.brand} />
 				<div className='pt-1'>
-					<Typography variant='body' className={textColor}>
+					<Typography variant='body' className={`${textColor} pt-1`}>
 						2023 Interplanetary Travel Syndicate. All rights reserved
 					</Typography>
 				</div>
