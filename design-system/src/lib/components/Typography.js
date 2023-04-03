@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Typography = (props) => {
 	let mergedClass;
@@ -9,8 +10,7 @@ const Typography = (props) => {
 			'heading-2': 'heading-2',
 			'heading-3': 'heading-3',
 			'subtitle-1': 'subtitle-1',
-			body: 'body-1',
-			caption: 'caption'
+			body: 'body-1'
 		};
 		return textClass[type];
 	}
@@ -27,12 +27,24 @@ const Typography = (props) => {
 			'heading-2': <h2 className={mergedClass}>{props.children}</h2>,
 			'heading-3': <h3 className={mergedClass}>{props.children}</h3>,
 			'subtitle-1': <p className={mergedClass}>{props.children}</p>,
-			body: <p className={mergedClass}>{props.children}</p>,
-			caption: <caption className={mergedClass}>{props.children}</caption>
+			body: <p className={mergedClass}>{props.children}</p>
 		};
 		return semantic[variant];
 	}
 	return getTypography(props.variant);
+};
+Typography.defaultProps = {
+	variant: 'body'
+};
+
+Typography.propTypes = {
+	variant: PropTypes.oneOf([
+		'heading-1',
+		'heading-2',
+		'heading-3',
+		'subtitle-1',
+		'body'
+	])
 };
 
 export default Typography;

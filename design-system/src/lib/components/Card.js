@@ -32,7 +32,7 @@ Card.defaultProps = {
 Card.propType = {
 	brand: PropTypes.oneOf(['world', 'visit', 'ride']),
 	size: PropTypes.oneOf(['sm', 'md', 'lg']),
-	layout: PropTypes.oneOf('alt'),
+	layout: PropTypes.string,
 	title: PropTypes.string,
 	description: PropTypes.string,
 	src: PropTypes.string,

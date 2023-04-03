@@ -1,100 +1,133 @@
 import React from 'react';
-import logo from '../assets/logo-light.svg';
 import Typography from '../components/Typography';
+import PropTypes from 'prop-types';
+import Logo from '../components/Logo';
 
 const Footer = (props) => {
 	return (
 		<footer>
-			<div
-				className='flex justify-center bg-capstonegray-800 pt-20 pb-10 border-t-8 border-black'
-				id='footer-top'>
-				<div className='container flex justify-between'>
-					<div className='flex flex-col gap-3'>
-						<div className='text-capstoneteal-200'>
-							<Typography variant='subtitle-1'>SITEMAP</Typography>
-						</div>
-						<div className='text-capstonegray-300'>
-							<a href='#'>
-								<Typography variant='body'>IPTS Travel</Typography>
-							</a>
-							<a href='#'>
-								<Typography variant='body'>IPTS Rail</Typography>
-							</a>
-							<a href='#'>
-								<Typography variant='body'>IPTS Info</Typography>
-							</a>
-						</div>
+			<FooterTop brand={props.brand}>
+				<div className='container flex justify-between py-10'>
+					<div>
+						<FooterCategory brand={props.brand}>Sitemap</FooterCategory>
+						<FooterLink brand={props.brand}>Shuddle Visit</FooterLink>
+						<FooterLink brand={props.brand}>Shuddle Rail</FooterLink>
+						<FooterLink brand={props.brand}>Shuddle World</FooterLink>
 					</div>
-					<div className='flex flex-col gap-3'>
-						<div className='text-capstoneteal-200'>
-							<Typography variant='subtitle-1'>tickets and fares</Typography>
-						</div>
-						<div className='text-capstonegray-300'>
-							<a href='#'>
-								<Typography variant='body'>Terra</Typography>
-							</a>
-							<a href='#'>
-								<Typography variant='body'>Andromeda</Typography>
-							</a>
-							<a href='#'>
-								<Typography variant='body'>Orion</Typography>
-							</a>
-							<a href='#'>
-								<Typography variant='body'>Klingon</Typography>
-							</a>
-						</div>
+					<div>
+						<FooterCategory brand={props.brand}>
+							Tickets and fares
+						</FooterCategory>
+						<FooterLink brand={props.brand}>Terra</FooterLink>
+						<FooterLink brand={props.brand}>Andromeda</FooterLink>
+						<FooterLink brand={props.brand}>Orion</FooterLink>
+						<FooterLink brand={props.brand}>Klingon</FooterLink>
 					</div>
-					<div className='flex flex-col gap-3'>
-						<div className='text-capstoneteal-200'>
-							<Typography variant='subtitle-1'>in the news</Typography>
-						</div>
-						<div className='text-capstonegray-300'>
-							<a href='#'>
-								<Typography variant='body'>IPTS Blog</Typography>
-							</a>
-							<a href='#'>
-								<Typography variant='body'>IPTS Corporate</Typography>
-							</a>
-							<a href='#'>
-								<Typography variant='body'>Newsletter</Typography>
-							</a>
-						</div>
+					<div>
+						<FooterCategory brand={props.brand}>In the news</FooterCategory>
+						<FooterLink brand={props.brand}>Shuddle Blog</FooterLink>
+						<FooterLink brand={props.brand}>Shuddle Corporate</FooterLink>
+						<FooterLink brand={props.brand}>Shuddle Newsletter</FooterLink>
 					</div>
-					<div className='flex flex-col gap-3'>
-						<div className='text-capstoneteal-200'>
-							<Typography variant='subtitle-1'>services & policies</Typography>
-						</div>
-						<div className='text-capstonegray-300'>
-							<a href='#'>
-								<Typography variant='body'>Service Updates</Typography>
-							</a>
-							<a href='#'>
-								<Typography variant='body'>Contact Us</Typography>
-							</a>
-							<a href='#'>
-								<Typography variant='body'>Privacy Policy</Typography>
-							</a>
-							<a href='#'>
-								<Typography variant='body'>Data Policy</Typography>
-							</a>
-						</div>
+					<div>
+						<FooterCategory brand={props.brand}>
+							Services & Policies
+						</FooterCategory>
+						<FooterLink brand={props.brand}>Service Updates</FooterLink>
+						<FooterLink brand={props.brand}>Contact Us</FooterLink>
+						<FooterLink brand={props.brand}>Privacy policy</FooterLink>
+						<FooterLink brand={props.brand}>Data Policy</FooterLink>
 					</div>
 				</div>
-			</div>
-			<div
-				className='flex py-4 bg-capstonegray-1000 justify-center'
-				id='footer-bottom'>
-				<div className='flex container justify-between text-white'>
-					<img src={logo} className='h-8 ' alt='logo' />
-					<div className='pt-1'>
-						<Typography variant='body'>
-							2023 Interplanetary Travel Syndicate. All rights reserved
-						</Typography>
-					</div>
-				</div>
-			</div>
+			</FooterTop>
+			<FooterEnd brand={props.brand} />
 		</footer>
 	);
 };
+Footer.defaultProps = {
+	brand: 'world'
+};
 
-export default Footer;
+Footer.propTypes = {
+	brand: PropTypes.string
+};
+
+const FooterCategory = (props) => {
+	function getClass(brand) {
+		const textClass = {
+			world: 'text-midnight-1000 mb-3',
+			visit: 'text-apricot-1000 mb-3',
+			ride: 'text-marina-1000 mb-3'
+		};
+		return textClass[brand];
+	}
+	const categoryClass = getClass(props.brand);
+
+	return (
+		<Typography variant='subtitle-1' className={categoryClass}>
+			{props.children}
+		</Typography>
+	);
+};
+
+const FooterLink = (props) => {
+	return (
+		<Typography variant='subtitle-1' className='text-amethyst-700'>
+			{props.children}
+		</Typography>
+	);
+};
+
+const FooterTop = (props) => {
+	function getClass(brand) {
+		const getColors = {
+			world:
+				'flex flex-col justify-center items-center w-full = gap-4 bg-midnight-100 border-t-8 border-r-0 border-b-0 border-l-0 border-midnight-900',
+			visit:
+				'flex flex-col justify-center items-center w-full = gap-4 bg-apricot-100 border-t-8 border-r-0 border-b-0 border-l-0 border-apricot-900',
+			ride: 'flex flex-col justify-center items-center w-full = gap-4 bg-marina-100 border-t-8 border-r-0 border-b-0 border-l-0 border-marina-900'
+		};
+		return getColors[brand];
+	}
+	const categoryColor = getClass(props.brand);
+
+	return <div className={categoryColor}>{props.children}</div>;
+};
+
+const FooterEnd = (props) => {
+	function getClass(brand) {
+		const colorClass = {
+			world: {
+				textColor: 'text-midnight-100',
+				bgColor: 'bg-midnight-1000'
+			},
+			visit: {
+				textColor: 'text-apricot-100',
+				bgColor: 'bg-apricot-1000'
+			},
+			ride: {
+				textColor: 'text-marina-100',
+				bgColor: 'bg-marina-1000'
+			}
+		};
+		return colorClass[brand];
+	}
+	const classes = getClass(props.brand);
+	const textColor = classes.textColor;
+	const bgColor = classes.bgColor;
+
+	return (
+		<div className={`flex py-4 justify-center ${bgColor}`} id='footer-bottom'>
+			<div className='flex container justify-between text-white'>
+				<Logo brand={props.brand} />
+				<div className='pt-1'>
+					<Typography variant='body' className={textColor}>
+						2023 Interplanetary Travel Syndicate. All rights reserved
+					</Typography>
+				</div>
+			</div>
+		</div>
+	);
+};
+
+export { Footer };

@@ -1,13 +1,14 @@
 import React, { Fragment } from 'react';
 import Typography from '../components/Typography';
 import PropTypes from 'prop-types';
+import Logo from '../components/Logo';
 
 //Navbar
 const Navbar = (props) => {
 	return (
 		<nav>
 			<NavbarPrimary brand={props.brand}>
-				<div className='text-white'>Logo</div>
+				<Logo brand={props.brand} />
 				<div className='flex gap-4'>
 					<NavbarLink>World</NavbarLink>
 					<NavbarLink>Travel</NavbarLink>
