@@ -5,6 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
+var _propTypes = _interopRequireDefault(require("prop-types"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const Typography = props => {
   let mergedClass;
@@ -15,7 +16,7 @@ const Typography = props => {
       'heading-3': 'heading-3',
       'subtitle-1': 'subtitle-1',
       body: 'body-1',
-      caption: 'caption'
+      label: 'label'
     };
     return textClass[type];
   }
@@ -41,13 +42,19 @@ const Typography = props => {
       body: /*#__PURE__*/_react.default.createElement("p", {
         className: mergedClass
       }, props.children),
-      caption: /*#__PURE__*/_react.default.createElement("caption", {
+      label: /*#__PURE__*/_react.default.createElement("label", {
         className: mergedClass
       }, props.children)
     };
     return semantic[variant];
   }
   return getTypography(props.variant);
+};
+Typography.defaultProps = {
+  variant: 'body'
+};
+Typography.propTypes = {
+  variant: _propTypes.default.oneOf(['heading-1', 'heading-2', 'heading-3', 'subtitle-1', 'body'])
 };
 var _default = Typography;
 exports.default = _default;
