@@ -84,7 +84,7 @@ const FooterTop = (props) => {
 			world:
 				'flex flex-col justify-center items-center w-full = gap-4 bg-midnight-100 border-t-8 border-r-0 border-b-0 border-l-0 border-midnight-900',
 			visit:
-				'flex flex-col justify-center items-center w-full = gap-4 bg-apricot-100 border-t-8 border-r-0 border-b-0 border-l-0 border-apricot-900',
+				'flex flex-col justify-center items-center w-full = gap-4 bg-apricot-100 border-t-8 border-r-0 border-b-0 border-l-0 border-apricot-600',
 			ride: 'flex flex-col justify-center items-center w-full = gap-4 bg-marina-100 border-t-8 border-r-0 border-b-0 border-l-0 border-marina-900'
 		};
 		return getColors[brand];
@@ -103,7 +103,7 @@ const FooterEnd = (props) => {
 			},
 			visit: {
 				textColor: 'text-apricot-100',
-				bgColor: 'bg-apricot-1000'
+				bgColor: 'bg-apricot-1100'
 			},
 			ride: {
 				textColor: 'text-marina-100',
@@ -118,10 +118,10 @@ const FooterEnd = (props) => {
 
 	return (
 		<div className={`flex py-4 justify-center ${bgColor}`} id='footer-bottom'>
-			<div className='flex container justify-between text-white'>
+			<div className='flex container justify-between items-center text-white'>
 				<Logo brand={props.brand} />
 				<div className='pt-1'>
-					<Typography variant='body' className={`${textColor} pt-1`}>
+					<Typography variant='body' className={`${textColor}`}>
 						2023 Interplanetary Travel Syndicate. All rights reserved
 					</Typography>
 				</div>
