@@ -10,7 +10,12 @@ const Card = (props) => {
 				className={
 					props.layout === 'alt' ? 'flex flex-row-reverse gap-8' : 'flex gap-8'
 				}>
-				<CardImage src={props.src} size={props.size} alt={props.alt} />
+				<CardImage
+					src={props.src}
+					size={props.size}
+					alt={props.alt}
+					imgClass={props.imgClass}
+				/>
 				<CardContent
 					title={props.title}
 					description={props.description}
@@ -29,7 +34,8 @@ Card.defaultProps = {
 	src: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1664&q=80',
 	title: 'This is a title',
 	description: 'this is a description',
-	alt: 'this is an alt message'
+	alt: 'this is an alt message',
+	imgClass: ''
 };
 
 Card.propType = {
@@ -39,7 +45,8 @@ Card.propType = {
 	title: PropTypes.string,
 	description: PropTypes.string,
 	src: PropTypes.string,
-	alt: PropTypes.string
+	alt: PropTypes.string,
+	imgClass: PropTypes.string
 };
 
 //CardBg
@@ -76,14 +83,20 @@ const CardBg = (props) => {
 const CardImage = (props) => {
 	function getClass(size) {
 		var imgSize = {
-			sm: 'w-32 h-32 rounded-[360px] object-cover',
-			md: 'w-60 h-60 rounded-[360px] object-cover',
-			lg: 'w-full h-[576px] rounded-lg object-cover'
+			sm: 'w-32 h-32 rounded-[360px]',
+			md: 'w-60 h-60 rounded-[360px]',
+			lg: 'w-full h-[576px] rounded-lg'
 		};
 		return imgSize[size];
 	}
 	const imgClass = getClass(props.size);
-	return <img className={imgClass} src={props.src} alt={props.alt} />;
+	return (
+		<img
+			className={`${imgClass} ${props.imgClass}`}
+			src={props.src}
+			alt={props.alt}
+		/>
+	);
 };
 
 //CardContent

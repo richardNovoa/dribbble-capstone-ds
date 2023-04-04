@@ -19,7 +19,8 @@ const Card = props => {
   }, /*#__PURE__*/_react.default.createElement(CardImage, {
     src: props.src,
     size: props.size,
-    alt: props.alt
+    alt: props.alt,
+    imgClass: props.imgClass
   }), /*#__PURE__*/_react.default.createElement(CardContent, {
     title: props.title,
     description: props.description,
@@ -35,7 +36,8 @@ Card.defaultProps = {
   src: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1664&q=80',
   title: 'This is a title',
   description: 'this is a description',
-  alt: 'this is an alt message'
+  alt: 'this is an alt message',
+  imgClass: ''
 };
 Card.propType = {
   brand: _propTypes.default.oneOf(['world', 'visit', 'ride']),
@@ -44,7 +46,8 @@ Card.propType = {
   title: _propTypes.default.string,
   description: _propTypes.default.string,
   src: _propTypes.default.string,
-  alt: _propTypes.default.string
+  alt: _propTypes.default.string,
+  imgClass: _propTypes.default.string
 };
 
 //CardBg
@@ -79,15 +82,15 @@ const CardBg = props => {
 const CardImage = props => {
   function getClass(size) {
     var imgSize = {
-      sm: 'w-32 h-32 rounded-[360px] object-cover',
-      md: 'w-60 h-60 rounded-[360px] object-cover',
-      lg: 'w-full h-[576px] rounded-lg object-cover'
+      sm: 'w-32 h-32 rounded-[360px]',
+      md: 'w-60 h-60 rounded-[360px]',
+      lg: 'w-full h-[576px] rounded-lg'
     };
     return imgSize[size];
   }
   const imgClass = getClass(props.size);
   return /*#__PURE__*/_react.default.createElement("img", {
-    className: imgClass,
+    className: "".concat(imgClass, " ").concat(props.imgClass),
     src: props.src,
     alt: props.alt
   });

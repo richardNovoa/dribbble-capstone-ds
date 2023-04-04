@@ -1,17 +1,30 @@
-import { Navbar, NavbarLink } from 'capstone-ds-rn/dist/components/Navbar';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import ShuddleRide from './components/ShuddleRide';
+import ShuddleVisit from './components/ShuddleVisit';
+import ShuddleWorld from './components/ShuddleWorld';
+
+const router = createBrowserRouter(
+	[
+		{
+			path: '/',
+			element: <ShuddleWorld />
+		},
+		{
+			path: '/visit',
+			element: <ShuddleVisit />
+		},
+		{
+			path: '/ride',
+			element: <ShuddleRide />
+		}
+	],
+	{ basename: '/' }
+);
 
 function App() {
 	return (
 		<div>
-		<Navbar hasSecondary brand='world'>
-				<NavbarLink>Hello</NavbarLink>
-			</Navbar>
-			<Navbar hasSecondary brand='visit'>
-				<NavbarLink>Hello</NavbarLink>
-			</Navbar>
-			<Navbar hasSecondary brand='ride'>
-				<NavbarLink>Hello</NavbarLink>
-			</Navbar>
+			<RouterProvider router={router} />
 		</div>
 	);
 }

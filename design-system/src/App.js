@@ -4,6 +4,7 @@ import { Footer } from './lib/components/Footer';
 import { Navbar, NavbarLink } from './lib/components/Navbar';
 import Typography from './lib/components/Typography';
 import Logo from './lib/components/Logo';
+import { Divider } from './lib/components/Divider';
 
 function App() {
 	return (
@@ -58,6 +59,10 @@ function App() {
 				<Card brand='world' size='sm'></Card>
 				<Card brand='visit' size='sm'></Card>
 				<Card brand='ride' size='sm'></Card>
+			</div>
+			<div className='bg-midnight-1000'>
+				<Divider direction='down' />
+				<Divider direction='up' />
 			</div>
 			<Footer brand='world' />
 			<Footer brand='visit' />

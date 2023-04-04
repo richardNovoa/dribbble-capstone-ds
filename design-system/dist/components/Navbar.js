@@ -21,7 +21,13 @@ const Navbar = props => {
     brand: props.brand
   }), /*#__PURE__*/_react.default.createElement("div", {
     className: "flex gap-4"
-  }, /*#__PURE__*/_react.default.createElement(NavbarLink, null, "World"), /*#__PURE__*/_react.default.createElement(NavbarLink, null, "Travel"), /*#__PURE__*/_react.default.createElement(NavbarLink, null, "Ride"))), props.hasSecondary && /*#__PURE__*/_react.default.createElement(NavbarSecondary, {
+  }, /*#__PURE__*/_react.default.createElement(NavbarLink, {
+    href: "/"
+  }, "World"), /*#__PURE__*/_react.default.createElement(NavbarLink, {
+    href: "/visit"
+  }, "Visit"), /*#__PURE__*/_react.default.createElement(NavbarLink, {
+    href: "/ride"
+  }))), props.hasSecondary && /*#__PURE__*/_react.default.createElement(NavbarSecondary, {
     brand: props.brand
   }, props.children));
 };
