@@ -10,7 +10,8 @@ const Typography = (props) => {
 			'heading-2': 'heading-2',
 			'heading-3': 'heading-3',
 			'subtitle-1': 'subtitle-1',
-			body: 'body-1'
+			body: 'body-1',
+			label: 'label'
 		};
 		return textClass[type];
 	}
@@ -27,7 +28,8 @@ const Typography = (props) => {
 			'heading-2': <h2 className={mergedClass}>{props.children}</h2>,
 			'heading-3': <h3 className={mergedClass}>{props.children}</h3>,
 			'subtitle-1': <p className={mergedClass}>{props.children}</p>,
-			body: <p className={mergedClass}>{props.children}</p>
+			body: <p className={mergedClass}>{props.children}</p>,
+			label: <label className={mergedClass}>{props.children}</label>
 		};
 		return semantic[variant];
 	}

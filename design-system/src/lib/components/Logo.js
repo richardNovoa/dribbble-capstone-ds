@@ -17,7 +17,7 @@ const Logo = (props) => {
 	}
 	const logoImg = getLogo(props.brand);
 
-	return <img src={logoImg} className='h-8' />;
+	return <img src={logoImg} className='h-12' />;
 };
 
 export default Logo;
