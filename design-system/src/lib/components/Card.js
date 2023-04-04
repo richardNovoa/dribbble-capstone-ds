@@ -7,12 +7,15 @@ const Card = (props) => {
 	return (
 		<CardBg brand={props.brand} size={props.size}>
 			<div
-				className={props.layout === 'alt' ? 'flex flex-row-reverse' : 'flex'}>
+				className={
+					props.layout === 'alt' ? 'flex flex-row-reverse gap-8' : 'flex gap-8'
+				}>
 				<CardImage src={props.src} size={props.size} alt={props.alt} />
 				<CardContent
 					title={props.title}
 					description={props.description}
 					size={props.size}
+					brand={props.brand}
 				/>
 			</div>
 		</CardBg>
@@ -55,10 +58,10 @@ const CardBg = (props) => {
 			},
 			lg: {
 				world:
-					'container flex pl-10 py-10 relative rounded-xl w-full h-[654px] bg-midnight-900',
+					'container flex pl-10 py-10 relative rounded-xl w-full h-[654px] ',
 				visit:
-					'container flex pl-10 py-10 relative rounded-xl w-full h-[654px] white',
-				ride: 'container flex pl-10 py-10 relative rounded-xl w-full h-[654px] bg-marina-900'
+					'container flex pl-10 py-10 relative rounded-xl w-full h-[654px] ',
+				ride: 'container flex pl-10 py-10 relative rounded-xl w-full h-[654px]'
 			}
 		};
 
@@ -85,15 +88,27 @@ const CardImage = (props) => {
 
 //CardContent
 const CardContent = (props) => {
-	function getClass(size) {
-		var contentSize = {
-			sm: 'flex flex-col justify-center items-start self-stretch gap-2 py-2',
-			md: 'w-60 h-60 rounded-[360px] object-cover',
-			lg: 'w-[728px] h-[576px] rounded-lg object-cover'
+	function getClass(brand, size) {
+		const classValue = {
+			world: {
+				sm: 'flex flex-col justify-center items-start self-stretch gap-2 py-2',
+				md: 'w-60 h-60 rounded-[360px] object-cover',
+				lg: 'w-[728px] h-[576px] rounded-lg object-cover'
+			},
+			visit: {
+				sm: 'flex flex-col justify-center items-start self-stretch gap-2 py-2',
+				md: 'w-60 h-60 rounded-[360px] object-cover',
+				lg: 'w-[728px] h-[576px] rounded-lg object-cover'
+			},
+			ride: {
+				sm: 'flex flex-col justify-center items-start self-stretch gap-2 py-2',
+				md: 'w-60 h-60 rounded-[360px] object-cover',
+				lg: 'w-[728px] h-[576px] rounded-lg object-cover'
+			}
 		};
-		return contentSize[size];
+		return classValue[brand][size];
 	}
-	const contentClass = getClass(props.size);
+	const contentClass = getClass(props.brand, props.size);
 
 	function getTitle(size) {
 		var titleSize = {
@@ -103,14 +118,28 @@ const CardContent = (props) => {
 		};
 		return titleSize[size];
 	}
+
 	const titleClass = getTitle(props.size);
+
+	function getTitleColor(brand) {
+		const titleColor = {
+			world: 'text-marina-600',
+			visit: 'text-amethyst-600',
+			ride: 'text-apricot-600'
+		};
+		return titleColor[brand];
+	}
+	const titleColor = getTitleColor(props.brand);
 
 	return (
 		<div className={contentClass}>
-			<Typography variant={titleClass}>{props.title}</Typography>
+			<Typography variant={titleClass} className={titleColor}>
+				{props.title}
+			</Typography>
 			<Typography variant='body'>{props.description}</Typography>
 		</div>
 	);
 };
 
 export { Card };
+
