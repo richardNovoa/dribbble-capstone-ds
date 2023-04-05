@@ -53,7 +53,7 @@ const CardBg = props => {
     const bgClasses = {
       sm: {
         flat: 'flex overflow-hidden gap-4 rounded-full bg-white',
-        surface: 'flex overflow-hidden gap-4 rounded-full'
+        surface: 'flex overflow-hidden inline-block overflow-hidden gap-4 rounded-[32px]'
       },
       md: {
         flat: 'flex flex-col',
@@ -78,7 +78,7 @@ const CardImage = props => {
     const classKey = {
       sm: {
         flat: 'w-32 h-32 rounded-[360px]',
-        surface: 'w-32 h-32 rounded-[360px]'
+        surface: 'w-32 h-32'
       },
       md: {
         flat: 'w-60 h-60 rounded-[32px] object-cover',
@@ -112,7 +112,7 @@ const CardContent = props => {
           descriptionClass: 'text-white'
         },
         surface: {
-          cardContentClass: 'flex flex-col justify-center items-start self-stretch gap-2 py-2',
+          cardContentClass: 'flex flex-col justify-center items-start self-stretch gap-2 py-4',
           titleVariant: 'heading-3',
           titleClass: 'text-midnight-1000',
           descriptionVariant: 'body',

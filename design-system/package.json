@@ -1,7 +1,7 @@
 {
 	"name": "capstone-ds-rn",
 	"description": "The design system for the dribbble design system capstone",
-	"version": "1.0.16",
+	"version": "1.0.17",
 	"private": false,
 	"main": "dist/index.js",
 	"module": "dist/index.js",
