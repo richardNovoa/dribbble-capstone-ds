@@ -41,6 +41,11 @@ function App() {
 				<Typography variant='heading-2' className='mb-4'>
 					Card
 				</Typography>
+				<Card size='lg' />
+				<Card size='md' />
+				<Card size='md' variant='surface' />
+				<Card size='sm' />
+				<Card size='sm' variant='surface' />
 			</div>
 			<div>
 				<Typography variant='heading-1'>Heading 1</Typography>
@@ -49,9 +54,7 @@ function App() {
 				<Typography variant='subtitle-1'>Subtitle 1</Typography>
 				<Typography variant='body'>Body</Typography>
 			</div>
-			<div>
-				<Card />
-			</div>
+
 			<div className='bg-midnight-1000'>
 				<Divider brand='world' direction='left' />
 				<Divider brand='world' direction='right' />

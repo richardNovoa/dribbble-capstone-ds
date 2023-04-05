@@ -32,7 +32,7 @@ Navbar.propTypes = {
 const NavbarLink = (props) => {
 	return (
 		<a href={props.href}>
-			<Typography variant='heading-3'>{props.children}</Typography>
+			<Typography variant='subtitle-1'>{props.children}</Typography>
 		</a>
 	);
 };

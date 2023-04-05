@@ -116,9 +116,9 @@ const CardContent = (props) => {
 					cardContentClass:
 						'flex flex-col justify-center items-start self-stretch gap-2 py-2',
 					titleVariant: 'heading-3',
-					titleClass: 'text-white',
+					titleClass: 'text-midnight-1000',
 					descriptionVariant: 'body',
-					descriptionClass: 'text-white'
+					descriptionClass: 'text-midnight-1000'
 				}
 			},
 			md: {
@@ -141,16 +141,16 @@ const CardContent = (props) => {
 				flat: {
 					cardContentClass: 'w-[728px] h-[576px] rounded-lg object-cover',
 					titleVariant: 'heading-2',
-					titleClass: '',
+					titleClass: 'text-marina-600',
 					descriptionVariant: 'heading-3',
-					descriptionClass: 'text-marina-600'
+					descriptionClass: 'text-white'
 				},
 				surface: {
 					cardContentClass: 'w-[728px] h-[576px] rounded-lg object-cover',
 					titleVariant: 'heading-2',
-					titleClass: '',
+					titleClass: 'text-marina-600',
 					descriptionVariant: 'heading-3',
-					descriptionClass: 'text-marina-600'
+					descriptionClass: 'text-white'
 				}
 			}
 		};

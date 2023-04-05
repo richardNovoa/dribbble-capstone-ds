@@ -93,7 +93,7 @@ const FooterTop = (props) => {
 			world:
 				'flex flex-col justify-center items-center w-full gap-4 bg-midnight-900 border-t-8 border-r-0 border-b-0 border-l-0 border-midnight-900',
 			visit:
-				'flex flex-col justify-center items-center w-full gap-4 bg-marina-900 border-t-8 border-r-0 border-b-0 border-l-0 border-marina-600',
+				'flex flex-col justify-center items-center w-full gap-4 bg-marina-900 border-t-8 border-r-0 border-b-0 border-l-0 border-marina-900',
 			ride: 'flex flex-col justify-center items-center w-full gap-4 bg-apricot-600 border-t-8 border-r-0 border-b-0 border-l-0 border-apricot-600'
 		};
 		return getColors[brand];
