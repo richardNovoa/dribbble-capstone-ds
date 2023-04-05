@@ -53,7 +53,7 @@ const CardBg = props => {
     const bgClasses = {
       sm: {
         flat: 'flex overflow-hidden gap-4 rounded-full bg-white',
-        surface: 'flex overflow-hidden inline-block overflow-hidden gap-4 rounded-[32px]'
+        surface: 'flex overflow-hidden inline-block overflow-hidden gap-4 rounded-[32px] bg-white'
       },
       md: {
         flat: 'flex flex-col',

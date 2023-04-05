@@ -22,6 +22,11 @@ export default {
 };
 
 export function Default(args) {
-	return <Card {...args}></Card>;
+	return (
+		<div className='bg-black p-4'>
+			<Card {...args}></Card>;
+		</div>
+	);
+
 }
 
