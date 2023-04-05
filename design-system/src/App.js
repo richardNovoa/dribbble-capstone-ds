@@ -50,15 +50,7 @@ function App() {
 				<Typography variant='body'>Body</Typography>
 			</div>
 			<div>
-				<Card brand='world' size='lg'></Card>
-				<Card brand='visit' size='lg'></Card>
-				<Card brand='ride' size='lg'></Card>
-				<Card brand='world' size='md'></Card>
-				<Card brand='visit' size='md'></Card>
-				<Card brand='ride' size='md'></Card>
-				<Card brand='world' size='sm'></Card>
-				<Card brand='visit' size='sm'></Card>
-				<Card brand='ride' size='sm'></Card>
+				<Card />
 			</div>
 			<div className='bg-midnight-1000'>
 				<Divider brand='world' direction='left' />
