@@ -55,9 +55,9 @@ Footer.propTypes = {
 const FooterCategory = (props) => {
 	function getClass(brand) {
 		const textClass = {
-			world: 'text-midnight-1000 mb-3',
-			visit: 'text-apricot-1000 mb-3',
-			ride: 'text-marina-1000 mb-3'
+			world: 'text-midnight-500 mb-3',
+			visit: 'text-marina-400 mb-3',
+			ride: 'text-marina-1100 mb-3'
 		};
 		return textClass[brand];
 	}
@@ -71,8 +71,17 @@ const FooterCategory = (props) => {
 };
 
 const FooterLink = (props) => {
+	function getClass(brand) {
+		const classKey = {
+			world: 'text-midnight-100',
+			ride: 'text-apricot-1200',
+			visit: 'text-marina-100'
+		};
+		return classKey[brand];
+	}
+	const footerLinkClass = getClass(props.brand);
 	return (
-		<Typography variant='subtitle-1' className='text-amethyst-700'>
+		<Typography variant='subtitle-1' className={footerLinkClass}>
 			{props.children}
 		</Typography>
 	);
@@ -82,10 +91,10 @@ const FooterTop = (props) => {
 	function getClass(brand) {
 		const getColors = {
 			world:
-				'flex flex-col justify-center items-center w-full = gap-4 bg-midnight-100 border-t-8 border-r-0 border-b-0 border-l-0 border-midnight-900',
+				'flex flex-col justify-center items-center w-full gap-4 bg-midnight-900 border-t-8 border-r-0 border-b-0 border-l-0 border-midnight-900',
 			visit:
-				'flex flex-col justify-center items-center w-full = gap-4 bg-apricot-100 border-t-8 border-r-0 border-b-0 border-l-0 border-apricot-600',
-			ride: 'flex flex-col justify-center items-center w-full = gap-4 bg-marina-100 border-t-8 border-r-0 border-b-0 border-l-0 border-marina-900'
+				'flex flex-col justify-center items-center w-full gap-4 bg-marina-900 border-t-8 border-r-0 border-b-0 border-l-0 border-marina-600',
+			ride: 'flex flex-col justify-center items-center w-full gap-4 bg-apricot-600 border-t-8 border-r-0 border-b-0 border-l-0 border-apricot-600'
 		};
 		return getColors[brand];
 	}
@@ -102,12 +111,12 @@ const FooterEnd = (props) => {
 				bgColor: 'bg-midnight-1000'
 			},
 			visit: {
-				textColor: 'text-apricot-100',
-				bgColor: 'bg-apricot-1100'
-			},
-			ride: {
 				textColor: 'text-marina-100',
 				bgColor: 'bg-marina-1000'
+			},
+			ride: {
+				textColor: 'text-apricot-100',
+				bgColor: 'bg-apricot-1100'
 			}
 		};
 		return colorClass[brand];
