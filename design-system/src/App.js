@@ -61,8 +61,10 @@ function App() {
 				<Card brand='ride' size='sm'></Card>
 			</div>
 			<div className='bg-midnight-1000'>
-				<Divider direction='down' />
-				<Divider direction='up' />
+				<Divider brand='world' direction='left' />
+				<Divider brand='world' direction='right' />
+				<Divider brand='visit' direction='right' />
+				<Divider brand='ride' direction='right' />
 			</div>
 			<Footer brand='world' />
 			<Footer brand='visit' />
