@@ -5,6 +5,8 @@ import { Navbar, NavbarLink } from './lib/components/Navbar';
 import Typography from './lib/components/Typography';
 import Logo from './lib/components/Logo';
 import { Divider } from './lib/components/Divider';
+import Search from './lib/components/Search';
+import { FormInput } from './lib/components/FormInput';
 
 function App() {
 	return (
@@ -36,7 +38,12 @@ function App() {
 				</Typography>
 				<Button>Search the Stars</Button>
 			</div>
-			<div>{/* <Logo brand='world' /> */}</div>
+			<div>
+				<Search brand='world' />
+				<Search brand='visit' />
+				<Search brand='ride' />
+				<FormInput />
+			</div>
 			<div>
 				<Typography variant='heading-2' className='mb-4'>
 					Card

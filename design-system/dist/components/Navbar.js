@@ -27,7 +27,7 @@ const Navbar = props => {
     href: "/visit"
   }, "Visit"), /*#__PURE__*/_react.default.createElement(NavbarLink, {
     href: "/ride"
-  }))), props.hasSecondary && /*#__PURE__*/_react.default.createElement(NavbarSecondary, {
+  }, "Ride"))), props.hasSecondary && /*#__PURE__*/_react.default.createElement(NavbarSecondary, {
     brand: props.brand
   }, props.children));
 };
@@ -46,7 +46,7 @@ const NavbarLink = props => {
   return /*#__PURE__*/_react.default.createElement("a", {
     href: props.href
   }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
-    variant: "heading-3"
+    variant: "subtitle-1"
   }, props.children));
 };
 exports.NavbarLink = NavbarLink;

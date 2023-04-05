@@ -5,6 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
+var _propTypes = _interopRequireDefault(require("prop-types"));
 var _shuddleWorld__light = _interopRequireDefault(require("../assets/logos/shuddle-world__light.svg"));
 var _shuddleVisit__light = _interopRequireDefault(require("../assets/logos/shuddle-visit__light.png"));
 var _shuddleRide__light = _interopRequireDefault(require("../assets/logos/shuddle-ride__light.png"));
@@ -23,8 +24,14 @@ const Logo = props => {
   const logoImg = getLogo(props.brand);
   return /*#__PURE__*/_react.default.createElement("img", {
     src: logoImg,
-    className: "h-12"
+    className: props.className
   });
+};
+Logo.defaultProps = {
+  className: 'h-12'
+};
+Logo.propTypes = {
+  className: _propTypes.default.string
 };
 var _default = Logo;
 exports.default = _default;
