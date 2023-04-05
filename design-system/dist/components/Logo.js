@@ -24,7 +24,8 @@ const Logo = props => {
   const logoImg = getLogo(props.brand);
   return /*#__PURE__*/_react.default.createElement("img", {
     src: logoImg,
-    className: props.className
+    className: props.className,
+    alt: "shuddle"
   });
 };
 Logo.defaultProps = {

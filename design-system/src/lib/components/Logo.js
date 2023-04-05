@@ -17,7 +17,7 @@ const Logo = (props) => {
 	}
 	const logoImg = getLogo(props.brand);
 
-	return <img src={logoImg} className={props.className} />;
+	return <img src={logoImg} className={props.className} alt='shuddle' />;
 };
 
 Logo.defaultProps = {

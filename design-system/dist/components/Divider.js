@@ -33,7 +33,8 @@ const Divider = props => {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "w-full"
   }, /*#__PURE__*/_react.default.createElement("img", {
-    src: imgSrc
+    src: imgSrc,
+    alt: "decorative"
   }));
 };
 exports.Divider = Divider;

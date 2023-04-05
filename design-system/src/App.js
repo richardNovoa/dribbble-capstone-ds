@@ -3,7 +3,6 @@ import { Card } from './lib/components/Card';
 import { Footer } from './lib/components/Footer';
 import { Navbar, NavbarLink } from './lib/components/Navbar';
 import Typography from './lib/components/Typography';
-import Logo from './lib/components/Logo';
 import { Divider } from './lib/components/Divider';
 import Search from './lib/components/Search';
 import { FormInput } from './lib/components/FormInput';

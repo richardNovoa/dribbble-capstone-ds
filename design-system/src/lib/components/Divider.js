@@ -27,7 +27,7 @@ const Divider = (props) => {
 
 	return (
 		<div className='w-full'>
-			<img src={imgSrc} />
+			<img src={imgSrc} alt='decorative' />
 		</div>
 	);
 };

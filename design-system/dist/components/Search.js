@@ -59,7 +59,7 @@ const SearchFields = props => {
     placeholder: "Passengers",
     hasIcon: true,
     iconClass: "fas fa-walking"
-  }), props.brand != 'ride' && /*#__PURE__*/_react.default.createElement(_FormInput.FormInput, {
+  }), props.brand !== 'ride' && /*#__PURE__*/_react.default.createElement(_FormInput.FormInput, {
     placeholder: "Pick Dates",
     hasIcon: true,
     iconClass: "fas fa-calendar"

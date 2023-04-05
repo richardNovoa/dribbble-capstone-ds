@@ -46,7 +46,7 @@ const SearchFields = (props) => {
 				iconClass='fas fa-plane-arrival'
 			/>
 			<FormInput placeholder='Passengers' hasIcon iconClass='fas fa-walking' />
-			{props.brand != 'ride' && (
+			{props.brand !== 'ride' && (
 				<FormInput
 					placeholder='Pick Dates'
 					hasIcon
