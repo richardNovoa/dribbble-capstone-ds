@@ -1,70 +1,144 @@
-# Getting Started with Create React App
+## Getting Started
+Once you have your React project ready, let's install the Astro Design System. To do this, simply run the following command in your project directory:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```
+npm install capstone-ds-rn
+```
 
-## Available Scripts
+### Installing Tailwind
+Next, let's install Tailwind CSS for React. Tailwind is a popular utility-first CSS framework that helps you quickly build custom designs without writing any CSS code. To install Tailwind, run the following commands in your project directory:
 
-In the project directory, you can run:
+```
+npm install -D tailwindcss
+npx tailwindcss init
+```
 
-### `npm start`
+After installing Tailwind, you need to configure it in your project. Edit the file named `tailwind.config.js` in your project directory and paste the following code:
+```
+/** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors');
+module.exports = {
+	content: [
+		'./src/**/*.{js,jsx,ts,tsx}',
+		'./node_modules/capstone-ds-rn/dist/components/**/*.js'
+	],
+	colors: {},
+	theme: {
+		extend: {
+			colors: {
+				midnight: {
+					100: '#E9F3FE',
+					200: '#D3E7FD',
+					300: '#A7D0FB',
+					400: '#7BB8FA',
+					500: '#4FA1F8',
+					600: '#2389F6',
+					700: '#1C6EC5',
+					800: '#155294',
+					900: '#0E3762',
+					1000: '#011542'
+				},
+				apricot: {
+					100: '#FEF3F1',
+					200: '#FCE8E3',
+					300: '#FAD1C7',
+					400: '#F7B9AC',
+					500: '#F5A290',
+					600: '#F28B74',
+					700: '#C26F5D',
+					800: '#915346',
+					900: '#61382E',
+					1000: '#301C17',
+					1100: '#5C0007',
+					1200: '#320A00'
+				},
+				amethyst: {
+					100: '#F5EFF8',
+					200: '#EADEF0',
+					300: '#D6BEE2',
+					400: '#C29ED4',
+					500: '#AE7FC5',
+					600: '#9A5FB7',
+					700: '#8242A2',
+					800: '#62327A',
+					900: '#432254',
+					1000: '#271430'
+				},
+				marina: {
+					100: '#E7FFFD',
+					200: '#D0FFFA',
+					300: '#AEFFF7',
+					400: '#71FFF1',
+					500: '#42FFEC',
+					600: '#13FFE7',
+					700: '#0FCCB9',
+					800: '#0B998B',
+					900: '#08665C',
+					1000: '#04332E',
+					1100: '#012D28'
+				}
+			}
+		}
+	},
+	plugins: []
+};
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Finally, replace the following code in your `src/index.css` file to import and apply Tailwind styles to your project:
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Serif:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
 
-### `npm test`
+.body-1 {
+	font-family: 'IBM Plex Mono';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1rem;
+}
+.subtitle-1 {
+	font-family: 'IBM Plex Serif';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.938rem;
+	line-height: 1rem;
+}
+.heading-3 {
+	font-family: 'IBM Plex Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 1.5;
+line-height: 2rem;
+}
+.heading-2 {
+	font-family: 'IBM Plex Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 2.5rem;
+line-height: 3rem;
+}
+.heading-1 {
+	font-family: 'IBM Plex Serif';
+font-style: normal;
+font-weight: 500;
+font-size: 4rem;
+line-height: 4rem;
+}
+.label {
+	font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 600;
+font-size: 1rem;
+line-height: 1rem;
+}
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Last but not least, to add FontAwesome functionality add this code to `public/index.html`
+```
+<script src="https://kit.fontawesome.com/69a17597d6.js" crossorigin="anonymous"></script>
+```
+And that's it! You're now ready to start using the Dribbble Design System in your React project. Just import the components you need from capstone-ds-rn and start writing your code. Happy coding!
