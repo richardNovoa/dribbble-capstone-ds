@@ -33,12 +33,12 @@ const Navbar = (props) => {
 		</nav>
 	);
 };
-Navbar.defaultProps = { brand: 'world', hasSecondary: true };
+Navbar.defaultProps = { brand: 'world', hasSecondary: true, isProd: false };
 
 Navbar.propTypes = {
 	brand: PropTypes.string,
 	hasSecondary: PropTypes.bool,
-	isProd: false
+	isProd: PropTypes.bool
 };
 
 //NavbarLink

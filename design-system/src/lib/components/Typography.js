@@ -45,7 +45,8 @@ Typography.propTypes = {
 		'heading-2',
 		'heading-3',
 		'subtitle-1',
-		'body'
+		'body',
+		'label'
 	])
 };
 
