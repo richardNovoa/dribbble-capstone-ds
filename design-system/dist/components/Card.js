@@ -177,7 +177,7 @@ const CardContent = props => {
     className: titleClass
   }, props.title), props.size === 'lg' && /*#__PURE__*/_react.default.createElement("div", {
     id: "divider",
-    className: "h-1 w-full bg-amethyst-400 rounded-full my-2"
+    className: "h-1 w-full bg-amethyst-400 rounded-full my-2 w-1/2"
   }), /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: descriptionVariant,
     className: descriptionClass
