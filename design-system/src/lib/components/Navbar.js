@@ -10,9 +10,21 @@ const Navbar = (props) => {
 			<NavbarPrimary brand={props.brand}>
 				<Logo brand={props.brand} />
 				<div className='flex gap-4'>
-					<NavbarLink href='/'>World</NavbarLink>
-					<NavbarLink href='/visit'>Visit</NavbarLink>
-					<NavbarLink href='/ride'>Ride</NavbarLink>
+					{!props.isProd && (
+						<Fragment>
+							<NavbarLink href='/'>World</NavbarLink>
+							<NavbarLink href='/visit'>Visit</NavbarLink>
+							<NavbarLink href='/ride'>Ride</NavbarLink>
+						</Fragment>
+					)}
+
+					{props.isProd && (
+						<Fragment>
+							<NavbarLink href='/'>World</NavbarLink>
+							<NavbarLink href='/#/visit'>Visit</NavbarLink>
+							<NavbarLink href='/#/ride'>Ride</NavbarLink>
+						</Fragment>
+					)}
 				</div>
 			</NavbarPrimary>
 			{props.hasSecondary && (
@@ -25,7 +37,8 @@ Navbar.defaultProps = { brand: 'world', hasSecondary: true };
 
 Navbar.propTypes = {
 	brand: PropTypes.string,
-	hasSecondary: PropTypes.bool
+	hasSecondary: PropTypes.bool,
+	isProd: false
 };
 
 //NavbarLink

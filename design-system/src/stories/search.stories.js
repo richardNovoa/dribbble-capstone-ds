@@ -4,6 +4,7 @@ export default {
 	title: 'Components/Search',
 	component: Search,
 	args: { brand: 'world' },
+
 	argTypes: {
 		brand: { control: 'select', options: ['world', 'visit', 'ride'] }
 	}

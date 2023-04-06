@@ -4,11 +4,13 @@ export default {
 	component: Navbar,
 	args: {
 		brand: 'world',
-		hasSecondary: true
+		hasSecondary: true,
+		isProd: false
 	},
 	argTypes: {
 		brand: { control: 'select', options: ['world', 'ride', 'visit'] },
-		hasSecondary: { control: 'boolean' }
+		hasSecondary: { control: 'boolean' },
+		isProd: { control: 'select', options: [true, false] }
 	}
 };
 
