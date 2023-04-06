@@ -185,5 +185,5 @@ const CardContent = props => {
     className: "mt-4"
   }, /*#__PURE__*/_react.default.createElement(_Button.Button, {
     href: props.ctaHref
-  }, props.ctaLabel)), "s");
+  }, props.ctaLabel)));
 };

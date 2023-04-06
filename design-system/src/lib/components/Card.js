@@ -190,7 +190,6 @@ const CardContent = (props) => {
 					<Button href={props.ctaHref}>{props.ctaLabel}</Button>
 				</div>
 			)}
-			s
 		</div>
 	);
 };
