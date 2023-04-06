@@ -176,6 +176,11 @@ const CardContent = (props) => {
 			<Typography variant={titleVariant} className={titleClass}>
 				{props.title}
 			</Typography>
+			{props.size === 'lg' && (
+				<div
+					id='divider'
+					className='h-1 w-full bg-amethyst-400 rounded-full my-2'></div>
+			)}
 			<Typography variant={descriptionVariant} className={descriptionClass}>
 				{props.description}
 			</Typography>
