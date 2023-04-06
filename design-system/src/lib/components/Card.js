@@ -180,7 +180,7 @@ const CardContent = (props) => {
 			{props.size === 'lg' && (
 				<div
 					id='divider'
-					className='h-1 w-full bg-amethyst-400 rounded-full my-2 w-1/2'></div>
+					className='h-1 bg-amethyst-400 rounded-full my-2 w-1/2'></div>
 			)}
 			<Typography variant={descriptionVariant} className={descriptionClass}>
 				{props.description}
@@ -190,6 +190,7 @@ const CardContent = (props) => {
 					<Button href={props.ctaHref}>{props.ctaLabel}</Button>
 				</div>
 			)}
+			s
 		</div>
 	);
 };
