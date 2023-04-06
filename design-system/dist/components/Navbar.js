@@ -40,12 +40,13 @@ const Navbar = props => {
 exports.Navbar = Navbar;
 Navbar.defaultProps = {
   brand: 'world',
-  hasSecondary: true
+  hasSecondary: true,
+  isProd: false
 };
 Navbar.propTypes = {
   brand: _propTypes.default.string,
   hasSecondary: _propTypes.default.bool,
-  isProd: false
+  isProd: _propTypes.default.bool
 };
 
 //NavbarLink

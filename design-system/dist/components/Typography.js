@@ -54,7 +54,7 @@ Typography.defaultProps = {
   variant: 'body'
 };
 Typography.propTypes = {
-  variant: _propTypes.default.oneOf(['heading-1', 'heading-2', 'heading-3', 'subtitle-1', 'body'])
+  variant: _propTypes.default.oneOf(['heading-1', 'heading-2', 'heading-3', 'subtitle-1', 'body', 'label'])
 };
 var _default = Typography;
 exports.default = _default;

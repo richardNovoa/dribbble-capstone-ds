@@ -11,7 +11,7 @@ const FormInput = props => {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "gap-2 flex bg-white border border-midnight-900 p-4 align-baseline"
   }, props.hasIcon && /*#__PURE__*/_react.default.createElement("i", {
-    class: "".concat(props.iconClass, " pt-1")
+    className: "".concat(props.iconClass, " pt-1")
   }), /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
     placeholder: props.placeholder,
