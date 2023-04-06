@@ -29,7 +29,7 @@ const Search = props => {
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "flex flex-col justify-between"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    class: "flex justify-end pb-2"
+    className: "flex justify-end pb-2"
   }, /*#__PURE__*/_react.default.createElement(_Logo.default, {
     brand: props.brand,
     className: "h-8"
