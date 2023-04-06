@@ -14,7 +14,7 @@ const Search = (props) => {
 					<SearchFields brand={props.brand} />
 				</div>
 				<div className='flex flex-col justify-between'>
-					<div class='flex justify-end pb-2'>
+					<div className='flex justify-end pb-2'>
 						<Logo brand={props.brand} className='h-8' />
 					</div>
 					<Button>Search</Button>
