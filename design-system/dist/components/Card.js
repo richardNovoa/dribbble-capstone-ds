@@ -175,7 +175,10 @@ const CardContent = props => {
   }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: titleVariant,
     className: titleClass
-  }, props.title), /*#__PURE__*/_react.default.createElement(_Typography.default, {
+  }, props.title), props.size === 'lg' && /*#__PURE__*/_react.default.createElement("div", {
+    id: "divider",
+    className: "h-1 w-full bg-amethyst-400 rounded-full my-2"
+  }), /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: descriptionVariant,
     className: descriptionClass
   }, props.description), props.hasCta && /*#__PURE__*/_react.default.createElement("div", {
