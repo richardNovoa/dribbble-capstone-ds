@@ -8,6 +8,7 @@ require("core-js/modules/es.symbol.description.js");
 var _react = _interopRequireDefault(require("react"));
 var _propTypes = _interopRequireDefault(require("prop-types"));
 var _Typography = _interopRequireDefault(require("./Typography"));
+var _Button = require("./Button");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 //Card
 const Card = props => {
@@ -24,7 +25,10 @@ const Card = props => {
     title: props.title,
     description: props.description,
     size: props.size,
-    variant: props.variant
+    variant: props.variant,
+    hasCta: props.hasCta,
+    ctaLabel: props.ctaLabel,
+    ctaHref: props.ctaHref
   }));
 };
 exports.Card = Card;
@@ -35,7 +39,10 @@ Card.defaultProps = {
   title: 'This is a title',
   description: 'this is a description',
   imgAlt: 'this is an alt message',
-  imgClass: ''
+  imgClass: '',
+  hasCta: false,
+  ctaLabel: 'ctaLabel',
+  ctaHref: '#'
 };
 Card.propType = {
   size: _propTypes.default.oneOf(['sm', 'md', 'lg']),
@@ -44,7 +51,10 @@ Card.propType = {
   description: _propTypes.default.string,
   imgSrc: _propTypes.default.string,
   imgAlt: _propTypes.default.string,
-  imgClass: _propTypes.default.string
+  imgClass: _propTypes.default.string,
+  hasCta: _propTypes.default.bool,
+  ctaLabel: _propTypes.default.string,
+  ctaHref: _propTypes.default.string
 };
 
 //CardBg
@@ -52,8 +62,8 @@ const CardBg = props => {
   function getBg(size, variant) {
     const bgClasses = {
       sm: {
-        flat: 'flex overflow-hidden gap-4 rounded-full bg-white',
-        surface: 'flex overflow-hidden inline-block overflow-hidden gap-4 rounded-[32px] bg-white inline-block'
+        flat: 'flex overflow-hidden gap-2 rounded-full bg-white',
+        surface: 'flex overflow-hidden gap-2 rounded-[32px] bg-white shrink'
       },
       md: {
         flat: 'flex flex-col',
@@ -105,18 +115,18 @@ const CardContent = props => {
     const classKey = {
       sm: {
         flat: {
-          cardContentClass: 'flex flex-col justify-center items-start self-stretch gap-2 py-2',
+          cardContentClass: 'flex flex-col gap-1 p-2',
           titleVariant: 'heading-3',
           titleClass: 'text-white',
           descriptionVariant: 'body',
-          descriptionClass: 'text-white'
+          descriptionClass: 'text-white w-auto'
         },
         surface: {
-          cardContentClass: 'flex flex-col justify-center items-start self-stretch gap-2 py-4',
+          cardContentClass: 'flex flex-col gap-1 p-2',
           titleVariant: 'heading-3',
           titleClass: 'text-midnight-1000',
           descriptionVariant: 'body',
-          descriptionClass: 'text-midnight-1000'
+          descriptionClass: 'text-midnight-1000 w-auto'
         }
       },
       md: {
@@ -168,5 +178,9 @@ const CardContent = props => {
   }, props.title), /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: descriptionVariant,
     className: descriptionClass
-  }, props.description));
+  }, props.description), props.hasCta && /*#__PURE__*/_react.default.createElement("div", {
+    className: "mt-4"
+  }, /*#__PURE__*/_react.default.createElement(_Button.Button, {
+    href: props.ctaHref
+  }, props.ctaLabel)));
 };

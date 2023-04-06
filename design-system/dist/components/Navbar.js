@@ -21,13 +21,19 @@ const Navbar = props => {
     brand: props.brand
   }), /*#__PURE__*/_react.default.createElement("div", {
     className: "flex gap-4"
-  }, /*#__PURE__*/_react.default.createElement(NavbarLink, {
+  }, !props.isProd && /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement(NavbarLink, {
     href: "/"
   }, "World"), /*#__PURE__*/_react.default.createElement(NavbarLink, {
     href: "/visit"
   }, "Visit"), /*#__PURE__*/_react.default.createElement(NavbarLink, {
     href: "/ride"
-  }, "Ride"))), props.hasSecondary && /*#__PURE__*/_react.default.createElement(NavbarSecondary, {
+  }, "Ride")), props.isProd && /*#__PURE__*/_react.default.createElement(_react.Fragment, null, /*#__PURE__*/_react.default.createElement(NavbarLink, {
+    href: "/"
+  }, "World"), /*#__PURE__*/_react.default.createElement(NavbarLink, {
+    href: "/#/visit"
+  }, "Visit"), /*#__PURE__*/_react.default.createElement(NavbarLink, {
+    href: "/#/ride"
+  }, "Ride")))), props.hasSecondary && /*#__PURE__*/_react.default.createElement(NavbarSecondary, {
     brand: props.brand
   }, props.children));
 };
@@ -38,7 +44,8 @@ Navbar.defaultProps = {
 };
 Navbar.propTypes = {
   brand: _propTypes.default.string,
-  hasSecondary: _propTypes.default.bool
+  hasSecondary: _propTypes.default.bool,
+  isProd: false
 };
 
 //NavbarLink
