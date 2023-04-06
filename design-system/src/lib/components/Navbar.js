@@ -20,9 +20,9 @@ const Navbar = (props) => {
 
 					{props.isProd && (
 						<Fragment>
-							<NavbarLink href='/'>World</NavbarLink>
-							<NavbarLink href='/#/visit'>Visit</NavbarLink>
-							<NavbarLink href='/#/ride'>Ride</NavbarLink>
+							<NavbarLink href='shuddle/'>World</NavbarLink>
+							<NavbarLink href='shuddle/#/visit'>Visit</NavbarLink>
+							<NavbarLink href='shuddle/#/ride'>Ride</NavbarLink>
 						</Fragment>
 					)}
 				</div>
