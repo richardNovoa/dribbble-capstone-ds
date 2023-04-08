@@ -11,11 +11,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 const SearchResult = props => {
   if (props.type === 'default') {
     return /*#__PURE__*/_react.default.createElement("div", {
-      className: "flex bg-white rounded-[32px] overflow-hidden"
+      className: "flex bg-white rounded-[16px] overflow-hidden"
     }, /*#__PURE__*/_react.default.createElement("img", {
       src: props.imgSrc,
       alt: "results",
-      className: "w-1/3 h-[178px] object-cover"
+      className: "w-1/3 h-auto object-cover"
     }), /*#__PURE__*/_react.default.createElement("div", {
       className: "p-6 flex flex-col justify-between w-2/3"
     }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
