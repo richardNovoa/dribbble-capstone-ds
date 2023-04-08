@@ -14,15 +14,17 @@ const Card = (props) => {
 				imgClass={props.imgClass}
 				variant={props.variant}
 			/>
-			<CardContent
-				title={props.title}
-				description={props.description}
-				size={props.size}
-				variant={props.variant}
-				hasCta={props.hasCta}
-				ctaLabel={props.ctaLabel}
-				ctaHref={props.ctaHref}
-			/>
+			{props.hasContent === true && (
+				<CardContent
+					title={props.title}
+					description={props.description}
+					size={props.size}
+					variant={props.variant}
+					hasCta={props.hasCta}
+					ctaLabel={props.ctaLabel}
+					ctaHref={props.ctaHref}
+				/>
+			)}
 		</CardBg>
 	);
 };
@@ -38,7 +40,8 @@ Card.defaultProps = {
 	imgClass: '',
 	hasCta: false,
 	ctaLabel: 'ctaLabel',
-	ctaHref: '#'
+	ctaHref: '#',
+	hasContent: true
 };
 
 Card.propType = {
@@ -51,7 +54,8 @@ Card.propType = {
 	imgClass: PropTypes.string,
 	hasCta: PropTypes.bool,
 	ctaLabel: PropTypes.string,
-	ctaHref: PropTypes.string
+	ctaHref: PropTypes.string,
+	hasContent: PropTypes.bool
 };
 
 //CardBg

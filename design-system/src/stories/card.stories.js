@@ -12,7 +12,8 @@ export default {
 		alt: 'this is an alt message',
 		hasCta: false,
 		ctaLabel: 'ctaLabel',
-		ctaHref: '#'
+		ctaHref: '#',
+		hasContent: false
 	},
 	argTypes: {
 		size: { control: 'select', options: ['sm', 'md', 'lg'] },
