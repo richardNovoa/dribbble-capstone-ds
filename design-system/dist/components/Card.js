@@ -21,7 +21,7 @@ const Card = props => {
     alt: props.imgAlt,
     imgClass: props.imgClass,
     variant: props.variant
-  }), /*#__PURE__*/_react.default.createElement(CardContent, {
+  }), props.hasContent === true && /*#__PURE__*/_react.default.createElement(CardContent, {
     title: props.title,
     description: props.description,
     size: props.size,
@@ -42,7 +42,8 @@ Card.defaultProps = {
   imgClass: '',
   hasCta: false,
   ctaLabel: 'ctaLabel',
-  ctaHref: '#'
+  ctaHref: '#',
+  hasContent: true
 };
 Card.propType = {
   size: _propTypes.default.oneOf(['sm', 'md', 'lg']),
@@ -54,7 +55,8 @@ Card.propType = {
   imgClass: _propTypes.default.string,
   hasCta: _propTypes.default.bool,
   ctaLabel: _propTypes.default.string,
-  ctaHref: _propTypes.default.string
+  ctaHref: _propTypes.default.string,
+  hasContent: _propTypes.default.bool
 };
 
 //CardBg
