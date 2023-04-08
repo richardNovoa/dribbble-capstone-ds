@@ -9,7 +9,8 @@ const FormInput = (props) => {
 				<input
 					type='text'
 					placeholder={props.placeholder}
-					value={props.value}></input>
+					value={props.value}
+					className={props.inputClassName}></input>
 			</div>
 		</div>
 	);

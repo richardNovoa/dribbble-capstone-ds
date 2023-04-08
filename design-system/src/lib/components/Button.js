@@ -6,7 +6,7 @@ const Button = (props) => {
 	if (props.type === 'primary') {
 		return (
 			<button
-				href='#'
+				href={props.href}
 				className=' items-center py-4 px-8 box-content bg-amethyst-700 text-white rounded-[32px] self-center hover:bg-amethyst-900 select-none active:bg-amethyst-700 focus:outline-none focus:ring focus:ring-amethyst-400'>
 				<Typography variant='label'>{props.children}</Typography>
 			</button>
@@ -14,7 +14,7 @@ const Button = (props) => {
 	} else if (props.type === 'secondary') {
 		return (
 			<button
-				href='#'
+				href={props.href}
 				className=' items-center py-4 px-8 box-content bg-marina-900 text-white rounded-[32px] self-center hover:bg-marina-1100 select-none active:bg-marina-800 focus:outline-none focus:ring focus:ring-marina-400'>
 				<Typography variant='label'>{props.children}</Typography>
 			</button>

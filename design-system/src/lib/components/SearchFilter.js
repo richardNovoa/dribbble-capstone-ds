@@ -32,7 +32,9 @@ const FilterOption = (props) => {
 	return (
 		<div className='flex gap-2 '>
 			<input type='checkbox' id='filter' value={props.children}></input>
-			<Typography className='text-marina-600'>{props.children}</Typography>
+			<Typography className={props.filterOptionClassName}>
+				{props.children}
+			</Typography>
 		</div>
 	);
 };

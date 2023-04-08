@@ -41,7 +41,7 @@ const FilterOption = props => {
     id: "filter",
     value: props.children
   }), /*#__PURE__*/_react.default.createElement(_Typography.default, {
-    className: "text-marina-600"
+    className: props.filterOptionClassName
   }, props.children));
 };
 exports.FilterOption = FilterOption;

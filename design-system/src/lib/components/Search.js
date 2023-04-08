@@ -17,7 +17,9 @@ const Search = (props) => {
 					<div className='flex justify-end pb-2'>
 						<Logo brand={props.brand} className='h-8' />
 					</div>
-					<Button>Search</Button>
+					<a href={props.searchHref}>
+						<Button>Search</Button>
+					</a>
 				</div>
 			</div>
 		</SearchBg>

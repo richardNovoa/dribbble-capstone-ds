@@ -33,7 +33,9 @@ const Search = props => {
   }, /*#__PURE__*/_react.default.createElement(_Logo.default, {
     brand: props.brand,
     className: "h-8"
-  })), /*#__PURE__*/_react.default.createElement(_Button.Button, null, "Search"))));
+  })), /*#__PURE__*/_react.default.createElement("a", {
+    href: props.searchHref
+  }, /*#__PURE__*/_react.default.createElement(_Button.Button, null, "Search")))));
 };
 exports.Search = Search;
 Search.defaultProps = {

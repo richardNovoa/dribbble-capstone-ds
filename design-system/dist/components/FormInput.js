@@ -17,7 +17,8 @@ const FormInput = props => {
   }), /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
     placeholder: props.placeholder,
-    value: props.value
+    value: props.value,
+    className: props.inputClassName
   })));
 };
 exports.FormInput = FormInput;

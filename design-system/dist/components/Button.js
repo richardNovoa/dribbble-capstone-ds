@@ -11,14 +11,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 const Button = props => {
   if (props.type === 'primary') {
     return /*#__PURE__*/_react.default.createElement("button", {
-      href: "#",
+      href: props.href,
       className: " items-center py-4 px-8 box-content bg-amethyst-700 text-white rounded-[32px] self-center hover:bg-amethyst-900 select-none active:bg-amethyst-700 focus:outline-none focus:ring focus:ring-amethyst-400"
     }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
       variant: "label"
     }, props.children));
   } else if (props.type === 'secondary') {
     return /*#__PURE__*/_react.default.createElement("button", {
-      href: "#",
+      href: props.href,
       className: " items-center py-4 px-8 box-content bg-marina-900 text-white rounded-[32px] self-center hover:bg-marina-1100 select-none active:bg-marina-800 focus:outline-none focus:ring focus:ring-marina-400"
     }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
       variant: "label"
