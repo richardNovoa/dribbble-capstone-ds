@@ -5,7 +5,7 @@ import Typography from './Typography';
 const SearchResult = (props) => {
 	if (props.type === 'default') {
 		return (
-			<div className='flex bg-white rounded-[16px] overflow-hidden'>
+			<div className='flex bg-white rounded-[16px] overflow-hidden h-48'>
 				<img
 					src={props.imgSrc}
 					alt='results'
