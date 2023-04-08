@@ -11,7 +11,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 const SearchResult = props => {
   if (props.type === 'default') {
     return /*#__PURE__*/_react.default.createElement("div", {
-      className: "flex bg-white rounded-[16px] overflow-hidden"
+      className: "flex bg-white rounded-[16px] overflow-hidden h-48"
     }, /*#__PURE__*/_react.default.createElement("img", {
       src: props.imgSrc,
       alt: "results",
