@@ -5,11 +5,11 @@ import Typography from './Typography';
 const SearchResult = (props) => {
 	if (props.type === 'default') {
 		return (
-			<div className='flex bg-white rounded-[32px] overflow-hidden'>
+			<div className='flex bg-white rounded-[16px] overflow-hidden'>
 				<img
 					src={props.imgSrc}
 					alt='results'
-					className='w-1/3 h-[178px] object-cover'
+					className='w-1/3 h-auto object-cover'
 				/>
 				<div className='p-6 flex flex-col justify-between w-2/3'>
 					<Typography variant='heading-3' className='text-left'>

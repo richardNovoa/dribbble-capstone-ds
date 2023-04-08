@@ -9,7 +9,7 @@ const Banner = (props) => {
 			<Typography variant='heading-3' className='text-white self-center pl-4'>
 				Join Shuddle World and get exclusive discounts
 			</Typography>
-			<Button>Learn More</Button>
+			<Button type='secondary'>Learn More</Button>
 		</div>
 	);
 };

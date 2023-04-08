@@ -5,7 +5,7 @@ require("core-js/modules/web.dom-collections.iterator.js");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.Search = void 0;
+exports.default = exports.SearchFields = exports.Search = void 0;
 var _react = _interopRequireWildcard(require("react"));
 var _propTypes = _interopRequireDefault(require("prop-types"));
 var _FormInput = require("./FormInput");
@@ -37,10 +37,12 @@ const Search = props => {
 };
 exports.Search = Search;
 Search.defaultProps = {
-  brand: 'ride'
+  brand: 'ride',
+  type: 'default'
 };
 Search.propTypes = {
-  brand: _propTypes.default.oneOf(['world', 'ride', 'visit'])
+  brand: _propTypes.default.oneOf(['world', 'ride', 'visit']),
+  type: _propTypes.default.string
 };
 
 //SearchFields
@@ -65,6 +67,7 @@ const SearchFields = props => {
     iconClass: "fas fa-calendar"
   }));
 };
+exports.SearchFields = SearchFields;
 const SearchOptions = props => {
   function getClasses(brand) {
     const classKey = {

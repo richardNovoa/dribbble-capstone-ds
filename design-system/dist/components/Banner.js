@@ -11,7 +11,7 @@ var _Typography = _interopRequireDefault(require("./Typography"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const Banner = props => {
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex justify-between rounded-[32px] p-4 bg-gradient-to-r from-midnight-700 to-midnight-1000"
+    className: "flex justify-between rounded-[16px] p-4 bg-gradient-to-r from-midnight-800 to-midnight-1000"
   }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "heading-3",
     className: "text-white self-center pl-4"

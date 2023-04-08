@@ -1,8 +1,8 @@
-import { Search } from '../lib/components/Search';
+import { SearchFields } from '../lib/components/Search';
 
 export default {
 	title: 'Components/Search',
-	component: Search,
+	component: SearchFields,
 	args: { brand: 'world' },
 
 	argTypes: {
@@ -11,7 +11,11 @@ export default {
 };
 
 export function Default(args) {
-	return <Search {...args}></Search>;
+	return (
+		<div className='bg-black p-20 w-1/2'>
+			<SearchFields {...args}></SearchFields>
+		</div>
+	);
 }
 
 Default.args = {};

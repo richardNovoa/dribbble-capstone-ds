@@ -44,7 +44,7 @@ const SearchResult = props => {
   }
   if (props.type === 'ride') {
     return /*#__PURE__*/_react.default.createElement("div", {
-      className: "bg-white rounded-[32px] flex justify-between px-7 py-4"
+      className: "bg-white rounded-[16px] flex justify-between px-7 py-4"
     }, /*#__PURE__*/_react.default.createElement("div", {
       className: "h-full flex flex-col gap-2"
     }, /*#__PURE__*/_react.default.createElement("div", {
