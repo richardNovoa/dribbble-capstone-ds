@@ -24,11 +24,13 @@ const Search = (props) => {
 	);
 };
 Search.defaultProps = {
-	brand: 'ride'
+	brand: 'ride',
+	type: 'default'
 };
 
 Search.propTypes = {
-	brand: PropTypes.oneOf(['world', 'ride', 'visit'])
+	brand: PropTypes.oneOf(['world', 'ride', 'visit']),
+	type: PropTypes.string
 };
 
 //SearchFields
@@ -127,4 +129,4 @@ const SearchBg = (props) => {
 
 export default Search;
 
-export { Search };
+export { Search, SearchFields };
