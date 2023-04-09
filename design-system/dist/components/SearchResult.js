@@ -53,7 +53,9 @@ const SearchResult = props => {
       className: "fas fa-train self-center pr-2"
     }), /*#__PURE__*/_react.default.createElement(_Typography.default, {
       variant: "heading-3"
-    }, props.title)), /*#__PURE__*/_react.default.createElement(_Typography.default, null, props.subtitle), /*#__PURE__*/_react.default.createElement(_Typography.default, {
+    }, props.title)), /*#__PURE__*/_react.default.createElement(_Typography.default, {
+      className: "text-amethyst-700"
+    }, props.subtitle), /*#__PURE__*/_react.default.createElement(_Typography.default, {
       className: "text-red-500"
     }, props.status)), /*#__PURE__*/_react.default.createElement("div", {
       className: "flex flex-col gap-2 text-right"

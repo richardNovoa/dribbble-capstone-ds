@@ -15,9 +15,11 @@ const Banner = props => {
   }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
     variant: "heading-3",
     className: "text-white self-center pl-4"
-  }, "Join Shuddle World and get exclusive discounts"), /*#__PURE__*/_react.default.createElement(_Button.Button, {
+  }, "Join Shuddle World and get exclusive discounts"), /*#__PURE__*/_react.default.createElement("a", {
+    href: props.bannerHref
+  }, /*#__PURE__*/_react.default.createElement(_Button.Button, {
     type: "secondary"
-  }, "Learn More"));
+  }, "Learn More")));
 };
 exports.Banner = Banner;
 Banner.defaultProps = {

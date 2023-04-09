@@ -29,7 +29,9 @@ const SearchResult = (props) => {
 							</div>
 						</div>
 						<div className=' text-right flex-col flex justify-end'>
-							<Typography variant='heading-2'>${props.price}</Typography>
+							<Typography variant='heading-2' className='text-amethyst-700'>
+								${props.price}
+							</Typography>
 							<Typography variant='body'>includes taxes and fees</Typography>
 						</div>
 					</div>
@@ -45,7 +47,9 @@ const SearchResult = (props) => {
 						<i className='fas fa-train self-center pr-2'></i>
 						<Typography variant='heading-3'>{props.title}</Typography>
 					</div>
-					<Typography>{props.subtitle}</Typography>
+					<Typography className='text-amethyst-700'>
+						{props.subtitle}
+					</Typography>
 					<Typography className='text-red-500'>{props.status}</Typography>
 				</div>
 				<div className='flex flex-col gap-2 text-right'>
