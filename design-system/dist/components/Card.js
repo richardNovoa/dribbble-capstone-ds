@@ -69,7 +69,7 @@ const CardBg = props => {
       },
       md: {
         flat: 'flex flex-col',
-        surface: 'flex flex-col justify-start rounded-[32px] overflow-hidden'
+        surface: 'flex flex-col justify-start rounded-[32px] overflow-hidden bg-cardSurface'
       },
       lg: {
         flat: 'container flex justify-center w-full h-[654px] gap-8',
@@ -140,7 +140,7 @@ const CardContent = props => {
           descriptionClass: 'text-white'
         },
         surface: {
-          cardContentClass: 'flex flex-col justify-center w-60 gap-2 p-4 bg-marina-100',
+          cardContentClass: 'flex flex-col justify-between w-60 gap-2 p-4 h-full bg-CardSurface bg-white',
           titleVariant: 'heading-3',
           titleClass: 'text-marina-1100',
           descriptionVariant: 'body',

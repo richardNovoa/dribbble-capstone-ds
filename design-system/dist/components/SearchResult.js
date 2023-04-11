@@ -37,7 +37,8 @@ const SearchResult = props => {
     }, /*#__PURE__*/_react.default.createElement("strong", null, props.rating), "/10 Good (", props.reviews, ' ', "reviews)"))), /*#__PURE__*/_react.default.createElement("div", {
       className: " text-right flex-col flex justify-end"
     }, /*#__PURE__*/_react.default.createElement(_Typography.default, {
-      variant: "heading-2"
+      variant: "heading-2",
+      className: "text-amethyst-700"
     }, "$", props.price), /*#__PURE__*/_react.default.createElement(_Typography.default, {
       variant: "body"
     }, "includes taxes and fees")))));
