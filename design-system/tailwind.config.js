@@ -8,6 +8,9 @@ module.exports = {
 	colors: {},
 	theme: {
 		extend: {
+			backgroundImage: {
+				cardSurface: "url('/src/lib/assets/media/Vector.png')"
+			},
 			colors: {
 				midnight: {
 					100: '#E9F3FE',
