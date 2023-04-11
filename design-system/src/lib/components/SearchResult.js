@@ -5,7 +5,7 @@ import Typography from './Typography';
 const SearchResult = (props) => {
 	if (props.type === 'default') {
 		return (
-			<div className='flex bg-white rounded-[16px] overflow-hidden h-48'>
+			<div className='flex bg-white rounded-[16px] overflow-hidden h-48 bg-CardSurface'>
 				<img
 					src={props.imgSrc}
 					alt='results'
@@ -41,7 +41,7 @@ const SearchResult = (props) => {
 	}
 	if (props.type === 'ride') {
 		return (
-			<div className='bg-white rounded-[16px] flex justify-between px-7 py-4'>
+			<div className='bg-white rounded-[16px] flex justify-between px-7 py-4 bg-CardSurface'>
 				<div className='h-full flex flex-col gap-2'>
 					<div className='flex'>
 						<i className='fas fa-train self-center pr-2'></i>
