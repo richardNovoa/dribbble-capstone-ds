@@ -15,7 +15,7 @@ const Card = props => {
   return /*#__PURE__*/_react.default.createElement(CardBg, {
     size: props.size,
     variant: props.variant
-  }, /*#__PURE__*/_react.default.createElement(CardImage, {
+  }, /*#__PURE__*/_react.default.createElement(CardMedia, {
     src: props.imgSrc,
     size: props.size,
     alt: props.imgAlt,
