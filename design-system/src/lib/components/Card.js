@@ -7,7 +7,7 @@ import { Button } from './Button';
 const Card = (props) => {
 	return (
 		<CardBg size={props.size} variant={props.variant}>
-			<CardImage
+			<CardMedia
 				src={props.imgSrc}
 				size={props.size}
 				alt={props.imgAlt}
